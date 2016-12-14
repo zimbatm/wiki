@@ -4,7 +4,8 @@ vimwiki + github pages.
 
 Taking notes and stuff. Testing this thing.
 
-* [[Coding]]
+* [[Coding]] - doesn't work on github
+* [Coding](Coding.md) - works on both
 
 Does the mediawiki-like linking work on GH pages? Answer: nope
 
