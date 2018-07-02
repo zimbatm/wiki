@@ -1,14 +1,13 @@
-# Personal wiki
+# Personal wiki + automatic GitHub pages publication
 
-vimwiki + github pages.
+vimwiki <3 github pages.
 
-Taking notes and stuff. Testing this thing.
+## How to create your own vim
 
-* [[Coding]] - doesn't work on github
-* [Coding](Coding.md) - works on both
+1. Install the vim plugin: [VimWiki](https://github.com/vimwiki/vimwiki)
+2. Add the following in your `~/.vimrc`:
 
-Does the mediawiki-like linking work on GH pages? Answer: nope
-
-
-TODO: Add hook to auto-commit and push changes
+```vim
+let g:vimwiki_list = [{ 'path': '~/vimwiki', 'ext': '.md', 'syntax': 'markdown']]
+```
 
