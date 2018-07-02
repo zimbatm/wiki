@@ -1,7 +1,7 @@
 # zimbatm's blog
 
-* [Coding](Coding.md)
-* 
+* [Diary](diary/)
+
 ## Projects
 
 * [Nix](Nix) - the best build tool
