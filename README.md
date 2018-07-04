@@ -12,7 +12,7 @@ vimwiki <3 github pages.
 3. Add the following in your `~/.vimrc`:
 
 ```vim
-let g:vimwiki_list = [{'path': '~/vimwiki', 'ext': '.md', 'syntax': 'markdown', 'auto_toc': 1, 'diary_index': 'index'}]
+let g:vimwiki_list = [{'path': '~/vimwiki', 'ext': '.md', 'syntax': 'markdown', 'auto_toc': 1, 'diary_rel_path': ''}]
 let g:vimwiki_dir_link = 'index'
 let g:vimwiki_use_calendar = 1
 ```
@@ -25,14 +25,21 @@ let g:vimwiki_use_calendar = 1
 ## References
 
 * https://pages.github.com/
+* http://thedarnedestthing.com/vimwiki%20cheatsheet
 
-## TODO
+## Known issues
 
-find a way to auto-commit-and-push
+### no auto-commit-and-push
 
-### sync valid HTML tags with GFM
+It's easy to forget to commit and push the changes
 
-Here is the default list:
-```vim
-let g:vimwiki_valid_html_tags='b,i,s,u,sub,sup,kbd,br,hr'
-```
+### no diary index auto-generation
+
+To regenerate the Diary on has to type `<Leader>wi` to open the diary index,
+then `<Leader>w<Leader>i` to regenerate the TOC. It would be better if it was
+automatically updated.
+
+### Fix the link converter
+
+By default vimwiki turns `Foo` into `[Foo](Foo)` but GitHub doesn't know how
+to follow those links. It would be better if it was `[Foo](Foo.md)` instead.

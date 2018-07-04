@@ -1,6 +1,6 @@
 # zimbatm's blog
 
-* [Diary](diary/)
+* [Diary](diary)
 
 ## Projects
 
