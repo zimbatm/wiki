@@ -5,7 +5,7 @@ the website.
 
 ## Current projects
 
-* Planning NixCon 2018
+* Planning [NixCon 2018](https://nixcon2018.org)
 * [Remote Tabs](Remote Tabs.md)
 
 ## Maintained projects
