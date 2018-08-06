@@ -9,6 +9,7 @@
 * [shab](https://github.com/zimbatm/shab) - full template engine in 4 lines of bash
 * [socketmaster](https://github.com/zimbatm/socketmaster) - zero downtime services restarts 
 * [Hostnames and usernames to reserve](https://zimbatm.github.io/hostnames-and-usernames-to-reserve/)
+* [logmail](https://github.com/zimbatm/logmail) - sendmail to syslog
 * [more...](https://github.com/zimbatm?utf8=%E2%9C%93&tab=repositories&type=source)
 
 ## Setup
