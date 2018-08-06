@@ -3,6 +3,11 @@ the website.
 
 [diary](diary.md)
 
+## Current projects
+
+* Planning NixCon 2018
+* [Remote Tabs](Remote Tabs.md)
+
 ## Maintained projects
 
 * [direnv](https://direnv.net) - per directory environment variables
