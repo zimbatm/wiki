@@ -1,6 +1,7 @@
-* [Diary](diary)
+This website is my personal scratchpad. See [about](about) for more info on
+the website.
 
-## Project highlights
+## Maintained projects
 
 * [direnv](https://direnv.net) - per directory environment variables
 * [github-deploy](https://github.com/zimbatm/github-deploy) - Track deployments on GitHub PRs
@@ -11,7 +12,3 @@
 * [Hostnames and usernames to reserve](https://zimbatm.github.io/hostnames-and-usernames-to-reserve/)
 * [logmail](https://github.com/zimbatm/logmail) - sendmail to syslog
 * [more...](https://github.com/zimbatm?utf8=%E2%9C%93&tab=repositories&type=source)
-
-## Setup
-
-The diary setup is documented in the [README](README.md)
