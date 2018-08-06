@@ -1,5 +1,7 @@
-This website is my personal scratchpad. See [about](about) for more info on
+This website is my personal scratchpad. See [about](about.md) for more info on
 the website.
+
+[Diary](Diary.md)
 
 ## Maintained projects
 

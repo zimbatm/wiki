@@ -13,9 +13,9 @@ to the world?
 
 ## This website
 
-This website is an experiment that combines [vimwiki](vimwiki) with github
-pages to maintain a personal [diary](diary) and wiki. For more info, see the
-[setup](setup) page.
+This website is an experiment that combines [vimwiki](vimwiki.md) with github
+pages to maintain a personal [diary](diary.md) and wiki. For more info, see the
+[setup](setup.md) page.
 
 I used to worry about permanent URLs but not anymore. Make sure to scape the
 hell out of the website if you want to keep some information!
