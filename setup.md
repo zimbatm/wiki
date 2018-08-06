@@ -33,6 +33,7 @@ let g:vimwiki_use_calendar = 1
 
 * https://pages.github.com/
 * http://thedarnedestthing.com/vimwiki%20cheatsheet
+* https://rubygems.org/gems/github-pages
 
 ## Known issues
 
