@@ -5,5 +5,8 @@
 ## Projects
 
 * [Nix](Nix) - the best build tool
+* [Direnv](https://direnv.net) - 
 
-If you want to create your own, see the [README](README.md).
+## Setup
+
+The diary setup is documented in the [README](README)

@@ -12,7 +12,14 @@ vimwiki <3 github pages.
 3. Add the following in your `~/.vimrc`:
 
 ```vim
-let g:vimwiki_list = [{'path': '~/vimwiki', 'ext': '.md', 'syntax': 'markdown', 'auto_toc': 1, 'diary_rel_path': ''}]
+let wiki_1 = {}
+let wiki_1.path = '~/vimwiki'
+let wiki_1.ext = '.md'
+let wiki_1.syntax = 'markdown'
+let wiki_1.auto_toc = 1
+" Move the diary to the top-level to avoid linking issues
+let wiki_1.diary_rel_path = ''
+let g:vimwiki_list = [wiki_1]
 let g:vimwiki_dir_link = 'index'
 let g:vimwiki_use_calendar = 1
 ```
