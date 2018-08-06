@@ -1,7 +1,7 @@
 This website is my personal scratchpad. See [about](about.md) for more info on
 the website.
 
-[Diary](Diary.md)
+[diary](diary.md)
 
 ## Maintained projects
 
