@@ -47,7 +47,16 @@ To regenerate the Diary on has to type `<Leader>wi` to open the diary index,
 then `<Leader>w<Leader>i` to regenerate the TOC. It would be better if it was
 automatically updated.
 
+see https://github.com/vimwiki/vimwiki/pull/530
+
 ### Fix the link converter
 
 By default vimwiki turns `Foo` into `[Foo](Foo)` but GitHub doesn't know how
 to follow those links. It would be better if it was `[Foo](Foo.md)` instead.
+
+see https://github.com/vimwiki/vimwiki/pull/529
+
+### Diary needs to be at the top-level
+
+Because new pages linked from the diary are created under the diary/ folder
+otherwise. See https://github.com/vimwiki/vimwiki/issues/527
