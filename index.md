@@ -6,7 +6,8 @@ the website.
 ## Current projects
 
 * Planning [NixCon](NixCon.md)
-* [Remote Tabs](Remote Tabs.md)
+* [RemoteTabs](RemoteTabs.md)
+* [BuiltWithNix](BuiltWithNix.md)
 
 ## Maintained projects
 
