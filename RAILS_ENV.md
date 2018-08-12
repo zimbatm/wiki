@@ -1,3 +1,6 @@
+---
+tags: essay
+---
 There is something wrong about RAILS_ENV.
 
 By the way this applies to other web frameworks.
