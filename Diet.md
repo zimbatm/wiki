@@ -11,12 +11,6 @@ Cheating 2 times per week is okay
 
 more crazy, one meal a day: https://www.youtube.com/watch?v=dR1FCJS8DoM
 
-# Training
-
-don't do power training
-
-https://www.youtube.com/watch?v=_fbCcWyYthQ
-
 
 # Fight alzheimer with mushrooms
 

@@ -10,6 +10,12 @@ Chi Gong and Tai Chi look interesting[2]
 * Better mental acquity
 * Longer lifespan
 
+# Training program
+
+it's not necessary to do power training!
+
+https://www.youtube.com/watch?v=_fbCcWyYthQ
+
 ## Links
 
 [1]: https://www.mayoclinic.org/healthy-lifestyle/fitness/basics/fitness-basics/hlv-20049447
