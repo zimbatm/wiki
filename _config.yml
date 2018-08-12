@@ -1,7 +1,6 @@
 theme: jekyll-theme-primer
 title: zimbatm's wiki
 
-markdown: CommonMarkGhPages
-commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "tables"]
+markdown: kramdown
+kramdown:
+  input: GFM
