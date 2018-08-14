@@ -1,6 +1,2 @@
 theme: jekyll-theme-primer
 title: zimbatm's wiki
-
-markdown: kramdown
-kramdown:
-  input: GFM

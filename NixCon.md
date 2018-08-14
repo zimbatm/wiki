@@ -1,5 +1,5 @@
 # NixCon 2018
 
-homepage: https://nixcon2018.org
+homepage: <https://nixcon2018.org>
 
-trello: https://trello.com/nixcon
+trello: <https://trello.com/nixcon>
