@@ -20,3 +20,7 @@ the website.
 * [Hostnames and usernames to reserve](https://zimbatm.github.io/hostnames-and-usernames-to-reserve/)
 * [logmail](https://github.com/zimbatm/logmail) - sendmail to syslog
 * [more...](https://github.com/zimbatm?utf8=%E2%9C%93&tab=repositories&type=source)
+
+---
+
+<a href="http://www.adfreeblog.org/" target="_blank"> <img src="http://www.adfreeblog.org/adfreesite_buttonsm.jpg"></a>
