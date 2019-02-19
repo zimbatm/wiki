@@ -6,9 +6,12 @@ the website.
 ## Current projects
 
 * [BuiltWithNix](BuiltWithNix.md)
-* [docker-nixpkgs](https://github.com/nix-community/docker-nixpkgs) - docker images straight out of nixpkgs
+* [docker-nixpkgs](https://github.com/nix-community/docker-nixpkgs) - docker
+  images straight out of nixpkgs
 * [mdsh](https://github.com/zimbatm/mdsh) - markdown shell pre-processor
 * [nix-path](https://github.com/zimbatm/nix-path) - per project NIX_PATH
+* [terraform-nixos](https://github.com/tweag/terraform-nixos) - Deploy NixOS
+  with Terraform
 
 ## Past projects
 
