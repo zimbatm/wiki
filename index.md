@@ -1,7 +1,8 @@
+| ![alpacasay](img/alpacasay.png) |
+| :-:                              |
+
 This website is my personal scratchpad. See [about](about.md) for more info on
 the website.
-
-[diary](diary.md)
 
 ## Current projects
 
