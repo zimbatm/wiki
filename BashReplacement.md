@@ -37,3 +37,6 @@ x=a b c
 y=$x d e
 
 
+## See also
+
+http://www.oilshell.org/
