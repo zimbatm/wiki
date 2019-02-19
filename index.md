@@ -5,9 +5,14 @@ the website.
 
 ## Current projects
 
-* Planning [NixCon](NixCon.md)
-* [RemoteTabs](RemoteTabs.md)
 * [BuiltWithNix](BuiltWithNix.md)
+* [docker-nixpkgs](https://github.com/nix-community/docker-nixpkgs) - docker images straight out of nixpkgs
+* [mdsh](https://github.com/zimbatm/mdsh) - markdown shell pre-processor
+* [nix-path](https://github.com/zimbatm/nix-path) - per project NIX_PATH
+
+## Past projects
+
+* Planning [NixCon](NixCon.md)
 
 ## Maintained projects
 
@@ -16,7 +21,6 @@ the website.
 * [github-deploy](https://github.com/zimbatm/github-deploy) - Track deployments on GitHub PRs
 * [h](https://github.com/zimbatm/h) - faster shell navigation of projects
 * [logmail](https://github.com/zimbatm/logmail) - sendmail to syslog
-* [mdsh](https://github.com/zimbatm/mdsh) - markdown shell pre-processor
 * [nixbox](https://github.com/nix-community/nixbox) - NixOS Vagrant boxes
 * [shab](https://github.com/zimbatm/shab) - full template engine in 4 lines of bash
 * [socketmaster](https://github.com/zimbatm/socketmaster) - zero downtime services restarts 
