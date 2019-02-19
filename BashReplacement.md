@@ -40,3 +40,5 @@ y=$x d e
 ## See also
 
 http://www.oilshell.org/
+
+https://github.com/saitoha/libsixel
