@@ -3,6 +3,10 @@
 This website is my personal scratchpad. See [about](about.md) for more info on
 the website.
 
+## Posts
+
+* [Deploying Kubernetes apps with KubeNix](deploying-k8s-apps-with-kubenix)
+
 ## Current projects
 
 * [BuiltWithNix](BuiltWithNix.md)
