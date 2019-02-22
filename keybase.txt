@@ -1,0 +1,66 @@
+==================================================================
+https://keybase.io/zimbatm
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://zimbatm.com
+  * I am zimbatm (https://keybase.io/zimbatm) on keybase.
+  * I have a public key with fingerprint 2603 53B9 93F8 CE16 752E  F48C 71BA F6D4 0C1D 63D7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01011069c17b53433d3484c514731e662fa31b6ba923fabf2463752b615be2673f2c0a",
+            "fingerprint": "260353b993f8ce16752ef48c71baf6d40c1d63d7",
+            "host": "keybase.io",
+            "key_id": "71baf6d40c1d63d7",
+            "kid": "01011069c17b53433d3484c514731e662fa31b6ba923fabf2463752b615be2673f2c0a",
+            "uid": "df5d398d161ce385d837bb939f2ec119",
+            "username": "zimbatm"
+        },
+        "service": {
+            "hostname": "zimbatm.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1475321509,
+    "expire_in": 157680000,
+    "prev": "5fc34802476a848c88e3846881cad77cb222abe0ca09124be3bb0bf09c856365",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtUltIFUEYPqeyVDQsKXuwos2K4iQ7O7uzu6fILgRdRUOyng47s7O66tk9nbNa
+JzkQRqVYWC8ldIGojJIyUsqkJCkLj0J46WZGZD1UREWEVnSblXoIemxehvnn+775
+vo85mDrek+zd1jYykDKTPPR2v8aewvcnLlZy2NajnL+SK6VjGy3TacQJlJo65+d4
+wAPAI5UAGUtQhFCHoiISCYgyBBQhwdAgwAhrqgANDRuCiKAsCRgBCVMBydAQCK9x
+Ps4wrSIaDoVNy2GyAuKhBLGqQkMhFCBGoYaoEBlgzUC6yBOgI6jLjFhsR1wGM4e1
+CM02bTZjh8CYvX/g/7Pv8jE53ZB0qCo6QIBQqEi6AmWMVagaAiUAqC4wQsOWFqQM
+vdMMYs0JcjEfx4YVJqFur26QvwHZxA4yZihsOzaxy9hFseOEIn6X6ERDLnI7xYHf
+GgFsWjprkTEqaDhi2hbnBwxJHNMVZckkKACJV30c3REywzRgughJRgrPlvsOrWCS
+kkFYF7wgbpaRprDSFYVFEpGiAKLpskywIAgapjzReBUIIqYQYx4bvEoUCUEkcW6s
+bZbN+UXmUytimhGzyNKc8jDlYsk13swJHm+yZ2LCOPd/eZKT0v58uum5iZ6GLUb1
+3GU53QMtg7NS6ksKRrfGmq4vPJmQf6mxJvX5gRtJGXym7+nlo/4jXVErXgWqV7W8
+Oj3z87dJ1soX+bN3thWH1ix6yQ3H+5pK9uwHuR2xyo/zUq/eWzEorc5NQOle4XGw
+ZlPCgHXmfUHtz2ih/45vJGdD++KDC1rTJn9JWX9+b31PYmfDnDr59vCuVu7WlYh3
+aMaSpv64OHrz/qHLsXP139d29zd0bjyS1evrgT0ZhxufnU3/EBuoHT4fPRZ/kJe1
+6gXdXfCmN695Wl1f/twLk9OJNPLJ0xx49PXavgmnFqbcHVrXMVU0fmTHM7qmvH0C
+pp972JRRsHz+0or2d9+PV/0C
+=kbL6
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zimbatm
+
+==================================================================
