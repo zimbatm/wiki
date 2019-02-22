@@ -60,3 +60,44 @@ are stored as plain text.
 
 Another option is to depend on hardware keys. Those typically have limited
 storage.
+
+## keyring.sh
+
+The daemon hands over a read-only memory region that contains the secret.
+
+Handles:
+* certificate chains
+* SSH agent
+* GPG agent
+* K/V passwords
+* delegated auth to other daemons
+
+Integrates with:
+* YubiKey
+* macOS Keyring
+* Windows Keyring
+* 
+
+### Get socket (username, hostname:port)
+
+Initiates the socket with auth on the target and hands it over to the client.
+
+SSH_AUTH_SOCK
+
+### Get password (username, hostname:port)
+
+
+
+### Set password (username, hostname:port, password)
+
+
+### Protocols
+
+https://developer.gnome.org/gnome-keyring/stable/gnome-keyring-Simple-Password-Storage.html
+
+https://www.vaultproject.io/api/
+
+https://api.kde.org/frameworks/kwallet/html/index.html
+
+https://developer.apple.com/documentation/security/keychain_services
+
