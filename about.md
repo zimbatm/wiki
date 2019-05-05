@@ -1,6 +1,6 @@
 ## Hi!
 
-![alpaca](img/alpaca.png)
+{% avatar "zimbatm" %}
 
 Hi, I am zimbatm on the Internet. If you see a zimbatm on a website it's
 probably me. Nobody else has thought that this was a good nickname to pick for

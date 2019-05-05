@@ -32,3 +32,10 @@ the website.
 * [shab](https://github.com/zimbatm/shab) - full template engine in 4 lines of bash
 * [socketmaster](https://github.com/zimbatm/socketmaster) - zero downtime services restarts 
 * [more...](https://github.com/zimbatm?utf8=%E2%9C%93&tab=repositories&type=source)
+
+## Journalling
+
+{% for post in site.posts %}
+* [{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}]({{ post.url | prepend: site.baseurl }})
+{% endfor %}
+</ul>

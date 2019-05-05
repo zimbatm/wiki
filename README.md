@@ -17,17 +17,18 @@ let wiki_1.path = '~/vimwiki'
 let wiki_1.ext = '.md'
 let wiki_1.syntax = 'markdown'
 let wiki_1.auto_toc = 1
-" Move the diary to the top-level to avoid linking issues
-let wiki_1.diary_rel_path = ''
+" Create posts automatically
+let wiki_1.diary_rel_path = '_posts'
 let g:vimwiki_list = [wiki_1]
 let g:vimwiki_dir_link = 'index'
 let g:vimwiki_use_calendar = 1
 ```
+
 ### 2. Setup GitHub Pages
 
 1. Create a new repo
 2. Set "master" as the gh-pages branch: ![xxx](https://pages.github.com/images/source-setting@2x.png)
-
+3. Add the `_config.yml` (see this repo)
 
 ## References
 
@@ -37,26 +38,39 @@ let g:vimwiki_use_calendar = 1
 
 ## Known issues
 
-### no auto-commit-and-push
+### jekyll: no autolink in markdown
+
+It's annoying to wrap links in `<>` and vimwiki opens the URL with the closing
+`>`.
+
+This is fixed by switching the markdown rendered in the `_config.yml`:
+
+```yaml
+markdown: CommonMarkGhPages
+# see https://github.com/gjtorikian/commonmarker#parse-options
+commonmark:
+  options:
+    - FOOTNOTES
+    - SMART
+  extensions:
+    - autolink
+    - strikethrough
+    - table
+```
+
+### vimwiki: no auto-commit-and-push
 
 It's easy to forget to commit and push the changes
 
-### no diary index auto-generation
-
-To regenerate the Diary on has to type `<Leader>wi` to open the diary index,
-then `<Leader>w<Leader>i` to regenerate the TOC. It would be better if it was
-automatically updated.
-
-see <https://github.com/vimwiki/vimwiki/pull/530>
-
-### Fix the link converter
+### vimwiki: fix the link converter
 
 By default vimwiki turns `Foo` into `[Foo](Foo)` but GitHub doesn't know how
 to follow those links. It would be better if it was `[Foo](Foo.md)` instead.
 
 see <https://github.com/vimwiki/vimwiki/pull/529>
 
-### Diary needs to be at the top-level
+### vimwiki: links from diary are annoying
 
-Because new pages linked from the diary are created under the diary/ folder
-otherwise. See <https://github.com/vimwiki/vimwiki/issues/527>
+To link to wiki entries from the diary, use the `/` prefix.
+
+Eg: `/Foo` will convert to `[Foo](/Foo)`
