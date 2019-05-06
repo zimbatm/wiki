@@ -1,6 +1,14 @@
-# Personal wiki + automatic GitHub pages publication
+# Personal wiki & journal + automatic GitHub pages publication
 
 vimwiki <3 github pages.
+
+## Goals
+
+* Jekyll should support the same markdown features as GitHub. The goal is that
+  markdown should be previewable on the GitHub side.
+* vimwiki should be tweaked to produce content for Jekyll.
+* vimwiki can be used both for the wiki and journaling.
+* the diary feature of vimwiki will generate Jekyll posts.
 
 ## How to create your own wiki
 
@@ -40,9 +48,6 @@ let g:vimwiki_use_calendar = 1
 
 ### jekyll: no autolink in markdown
 
-It's annoying to wrap links in `<>` and vimwiki opens the URL with the closing
-`>`.
-
 This is fixed by switching the markdown rendered in the `_config.yml`:
 
 ```yaml
@@ -67,6 +72,9 @@ Jekyll requires the post to also contain a slug name.
 
 But since this is a journal it doesn't make sense to have a title for every
 day. And vimwiki doesn't support it anyways.
+
+This will become possible once https://github.com/jekyll/jekyll/pull/7649 is
+merged in.
 
 ### vimwiki: no auto-commit-and-push
 
