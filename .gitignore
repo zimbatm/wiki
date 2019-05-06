@@ -6,3 +6,5 @@ _site/
 
 # vim
 .*.swp
+/.tags
+/.vimwiki_tags
