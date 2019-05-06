@@ -58,6 +58,16 @@ commonmark:
     - table
 ```
 
+### jekyll: posts are not listed
+
+Jekyll requires the post to also contain a slug name.
+
+* Works: `_posts/2019-05-06-foo.md`
+* Doesn't work: `_posts/2019-05-06.md`
+
+But since this is a journal it doesn't make sense to have a title for every
+day. And vimwiki doesn't support it anyways.
+
 ### vimwiki: no auto-commit-and-push
 
 It's easy to forget to commit and push the changes
