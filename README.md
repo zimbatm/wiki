@@ -32,9 +32,9 @@ let g:vimwiki_use_calendar = 1
 
 ## References
 
-* <https://pages.github.com/>
-* <http://thedarnedestthing.com/vimwiki%20cheatsheet>
-* <https://rubygems.org/gems/github-pages>
+* https://pages.github.com/
+* http://thedarnedestthing.com/vimwiki%20cheatsheet
+* https://rubygems.org/gems/github-pages
 
 ## Known issues
 
@@ -77,7 +77,7 @@ It's easy to forget to commit and push the changes
 By default vimwiki turns `Foo` into `[Foo](Foo)` but GitHub doesn't know how
 to follow those links. It would be better if it was `[Foo](Foo.md)` instead.
 
-see <https://github.com/vimwiki/vimwiki/pull/529>
+see https://github.com/vimwiki/vimwiki/pull/529
 
 ### vimwiki: links from diary are annoying
 

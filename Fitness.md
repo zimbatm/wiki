@@ -14,7 +14,7 @@ Chi Gong and Tai Chi look interesting[2]
 
 it's not necessary to do power training!
 
-<https://www.youtube.com/watch?v=_fbCcWyYthQ>
+https://www.youtube.com/watch?v=_fbCcWyYthQ
 
 ## Links
 

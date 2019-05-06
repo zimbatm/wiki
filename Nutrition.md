@@ -1,1 +1,1 @@
-<https://www.vegan.com/nutrition/>
+https://www.vegan.com/nutrition/
