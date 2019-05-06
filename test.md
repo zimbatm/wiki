@@ -21,3 +21,5 @@ stdenv.mkDerivation {
   version = "0.1.1";
 }
 ```
+
+link with a .md extension: [test](test.md)
