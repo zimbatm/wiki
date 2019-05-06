@@ -1,11 +1,11 @@
 # Personal wiki & journal + automatic GitHub pages publication
 
-vimwiki <3 github pages.
+[vimwiki](vimwiki.md) <3 [GithubPages](GithubPages.md).
 
 ## Goals
 
-* Jekyll should support the same markdown features as GitHub. The goal is that
-  markdown should be previewable on the GitHub side.
+* Jekyll should support the same markdown features as GitHub. Markdown should
+  be previewable on GitHub.
 * vimwiki should be tweaked to produce content for Jekyll.
 * vimwiki can be used both for the wiki and journaling.
 * the diary feature of vimwiki will generate Jekyll posts.
@@ -14,7 +14,7 @@ vimwiki <3 github pages.
 
 ### 1. Setup vim
 
-1. Install the [VimWiki](https://github.com/vimwiki/vimwiki) plugin
+1. Install the [vimwiki](vimwiki.md) plugin
 2. Optionally install the [Calendar](https://github.com/mattn/calendar-vim)
    plugin
 3. Add the following in your `~/.vimrc`:
@@ -36,13 +36,7 @@ let g:vimwiki_use_calendar = 1
 
 1. Create a new repo
 2. Set "master" as the gh-pages branch: ![xxx](https://pages.github.com/images/source-setting@2x.png)
-3. Add the `_config.yml` (see this repo)
-
-## References
-
-* https://pages.github.com/
-* http://thedarnedestthing.com/vimwiki%20cheatsheet
-* https://rubygems.org/gems/github-pages
+3. Add a `_config.yml` (see this repo)
 
 ## Known issues
 
@@ -80,7 +74,7 @@ merged in.
 
 It's easy to forget to commit and push the changes.
 
-`:Gwrite` + `:Gcommit` + `:Gpush` from [vim fugitive](vim-fugitive) is quite
+`:Gwrite` + `:Gcommit` + `:Gpush` from [vim fugitive](vim-fugitive.md) is quite
 handy but still a bit too many commands.
 
 ### vimwiki: fix the link converter
