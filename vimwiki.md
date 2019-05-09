@@ -3,7 +3,7 @@
 
 | homepage    | https://vimwiki.github.io/          |
 | repo        | https://github.com/vimwiki/vimwiki/ |
-| cheat sheet |  http://thedarnedestthing.com/vimwiki%20cheatsheet | 
+| cheat sheet | http://thedarnedestthing.com/vimwiki%20cheatsheet | 
 
 VimWiki is a Vim extension that makes it easy to maintain a wiki and diary.
 

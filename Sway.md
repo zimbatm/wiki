@@ -1,11 +1,8 @@
 # Sway is a Wayland Desktop Environment
 
-It needs a bit of work to make it confortable
-
-https://wiki.archlinux.org/index.php/Sway
-
-https://github.com/swaywm/sway/wiki/i3-Migration-Guide#common-xorg-apps-used-on-i3-with-wayland-alternatives
-
+| homepage    | https://swaywm.org/                 |
+| cheat sheet | https://i3wm.org/docs/refcard.html  |
+| wiki        | https://github.com/swaywm/sway/wiki |
 
 ## X1 Yoga report
 
@@ -39,18 +36,18 @@ Really cool term for keyboard-centric workflows
 
 https://wiki.archlinux.org/index.php/Termite
 
-## TODO
+## Mako
 
-notify-osd for wayland?
-No OSD display for things like volume and brightness changes
+Works great as a notify-osd replacement to send 
+
+No OSD display for things like volume and brightness changes. These can be put
+in i3status-rs
+
+## TODO
 
 Disable HiDPI: https://wiki.archlinux.org/index.php/HiDPI#GUI_toolkits
 
 https://github.com/greshake/i3status-rust/blob/07e5ffeb50aa37bc634158555704879d7a1e1cee/blocks.md
-
-fix brightnessctl
-
-Notification center (mako)
 
 Keyring / Keychain
 
@@ -64,7 +61,6 @@ i3 menu entries
 
 Color schemes
 Configure .Xresources
-
 
 Wacom + Wayland needs xorg 1.20, nixpkgs-unstable ships with 1.19
 
