@@ -4,13 +4,14 @@ Websites that use and respect `prefers-color-scheme: dark`.
 
 | Site          | Supports | Notes                                       |
 | ---           | ---      | ---                                         |
-| GitHub        | [ ]      |                                             |
 | DuckDuckGo    | [ ]      |                                             |
+| GitHub        | [ ]      |                                             |
 | Google        | [ ]      |                                             |
-| StackOverflow | [ ]      |                                             |
 | Hacker News   | [ ]      |                                             |
-| Lobste.rs     | [ ]      |                                             |
-| Reddit        | [ ]      |                                             |
-| Nomadlist     | [x]      |                                             |
 | JSFiddle      | [-]      | became dark after disabling the ad-blocker? |
+| Lobste.rs     | [ ]      |                                             |
+| Nomadlist     | [x]      |                                             |
+| Reddit        | [ ]      |                                             |
+| StackOverflow | [ ]      |                                             |
+| Twitter       | [x]      | switched suddenly                           |
 
