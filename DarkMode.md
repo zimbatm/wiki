@@ -1,4 +1,7 @@
-# Dark Mode websites
+# Dark Mode
+
+
+## Websites
 
 Websites that provide a dark theme.
 
@@ -19,8 +22,12 @@ Ideally they would respect [`prefers-color-scheme: dark`](https://developer.mozi
 | StackOverflow | [ ]      |                                             |
 | Twitter       | [~]      | manual toggle                               |
 
-## Browser extension
+### Browser extension
 
-For all the sites that are not supported:
+For all the sites that are not supported: https://darkreader.org/
 
-https://darkreader.org/
+
+### References
+ 
+* https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
+* https://blog.iconfactory.com/2018/10/dark-mode-and-css/
