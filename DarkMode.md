@@ -16,11 +16,11 @@ Ideally they would respect [`prefers-color-scheme: dark`](https://developer.mozi
 | Gmail         | [x]      | theme selection                             |
 | JSFiddle      | [~]      | became dark after disabling the ad-blocker? |
 | Lobste.rs     | [ ]      |                                             |
-| Nomadlist     | [x]      |                                             |
-| Notion        | [~]      | manual toggle                               |
+| Nomadlist     | [x]      | respects `prefers-color-scheme`             |
+| Notion        | [x]      | manual toggle                               |
 | Reddit        | [x]      | manual toggle                               |
 | StackOverflow | [ ]      |                                             |
-| Twitter       | [~]      | manual toggle                               |
+| Twitter       | [x]      | manual toggle                               |
 
 ### Browser extension
 
