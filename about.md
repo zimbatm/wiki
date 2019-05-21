@@ -27,7 +27,7 @@ free Internet!
 
 ## Contact me
 
-If you want to reach me, @zimbatm on [Twitter](https://twitter.com/zimbatm),
+If you want to reach me, [@zimbatm on Twitter](https://twitter.com/zimbatm),
 [GitHub](https://github.com/zimbatm/), send an email to, you guessed
 it, [zimbatm@zimbatm.com](mailto:zimbatm@zimbatm.com) .
 
