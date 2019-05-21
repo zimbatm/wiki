@@ -26,6 +26,24 @@ Ideally they would respect [`prefers-color-scheme: dark`](https://developer.mozi
 
 For all the sites that are not supported: https://darkreader.org/
 
+## Browser Support
+
+### Safari
+
+Out of the box
+
+### Firefox
+
+Ships since Firefox 67.
+
+The feature is disabled if the `privacy.resistFingerprinting` option is set to
+`true`.
+
+To force a value, create a new entry in `about:config`.
+
+* name: `ui.systemUsesDarkTheme`
+* type: `int`
+* values: `0` (light) `1` (dark)
 
 ### References
  
