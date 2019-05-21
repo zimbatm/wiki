@@ -28,7 +28,7 @@ free Internet!
 ## Contact me
 
 If you want to reach me, [@zimbatm on Twitter](https://twitter.com/zimbatm),
-[GitHub](https://github.com/zimbatm/), send an email to, you guessed
+[GitHub](https://github.com/zimbatm/) and [Mastodon](https://mastodon.social/@zimbatm), send an email to, you guessed
 it, [zimbatm@zimbatm.com](mailto:zimbatm@zimbatm.com) .
 
 The median response time is around 24 hours but can trail up to a week!
