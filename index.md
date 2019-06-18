@@ -5,6 +5,7 @@ the website.
 
 ## Posts
 
+* [Recursive Nix experiment](experiment-recursive-nix)
 * [Deploying Kubernetes apps with KubeNix](deploying-k8s-apps-with-kubenix)
 
 ## Current projects
