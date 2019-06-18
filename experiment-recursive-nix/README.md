@@ -176,7 +176,11 @@ must be a reason behind it which I do not know yet.
 * Nixpkgs is going to be evaluated for every derivation that uses recursive nix.
 On the non-cached case it will be much slower than using IFD.
 
+## See also
+
+* [RET cont RFC](https://discourse.nixos.org/t/new-rfcs-40-ret-cont-recursive-nix-open-for-shepherd-nominations/2075)
+
 ## Comments
 
-Discussion may be happening over there:
+Discussion should be happening over there:
 https://discourse.nixos.org/t/recursive-nix-experiment/3206
