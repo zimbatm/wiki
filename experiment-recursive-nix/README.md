@@ -164,6 +164,9 @@ permanent.
 
 ## Known issues
 
+* The `/nix/var` hole has security and build impurity implications that need
+  to be studied further.
+
 * Any builtins fetchers will fail because they are executed by the client, which
 is sandboxed by the build.
 
