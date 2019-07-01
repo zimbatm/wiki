@@ -1,5 +1,7 @@
-# NixCon 2018
+# NixCon
 
-homepage: https://nixcon2018.org
+The biggest (and only) NixOS conference.
+
+homepage: https://nixcon.org
 
 trello: https://trello.com/nixcon
