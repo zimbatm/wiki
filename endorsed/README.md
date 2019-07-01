@@ -3,7 +3,7 @@
 Writing software as a lazy programmer is all about looking at the landscape
 and finding the minimum amount of work to achieve a certain goal. Look at what
 exists, find a path and connect the lines. The more you know an ecosystem the
-more it's possible to find unexpected connection.
+more it's possible to find unexpected and creative solutions.
 
 The best thing about that process is that sometimes you find a gem. Something
 that some more principled developers would quickly dismiss as being hacky. But
