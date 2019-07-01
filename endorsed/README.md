@@ -17,7 +17,7 @@ please ping me and I will be glad to review them.
 
 ## Badge
 
-TODO
+[![endorsed by zimbatm](./endorsed.svg)](https://zimbatm.com/endorsed)
 
 ## Hall of fame
 
