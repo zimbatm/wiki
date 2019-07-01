@@ -13,6 +13,14 @@ so unexpected that it makes my senses tingle.
 
 So this page is about celebrating these gems. Please don't take this too
 seriously :smile: .
+
+## Badge
+
+Projects might or might not get PRs to get this badge added to their
+README.md:
+
+[![endorsed by zimbatm](./endorsed.svg)](https://zimbatm.com/endorsed/)
+
 ## Hall of fame
 
 ### Shab
@@ -29,11 +37,4 @@ Check it out: https://github.com/zimbatm/shab
 
 Want to submit a project? Reply to
 https://twitter.com/zimbatm/status/1145713654429560834
-
-## Badge
-
-Projects might or might not get PRs to get this badge added to their
-README.md:
-
-[![endorsed by zimbatm](./endorsed.svg)](https://zimbatm.com/endorsed/)
 
