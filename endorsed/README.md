@@ -11,10 +11,13 @@ actually it takes some genius (or madness?) just to have had the idea to do
 it. Just like some movies are so bad that they become good, some software are
 so unexpected that it makes my senses tingle.
 
-So this page is about celebrating these gems. Please don't take it too
+So this page is about celebrating these gems. Please don't take this too
 seriously :smile: .
 
 ## Badge
+
+Projects might or might not get PRs to get this badge added to their
+README.md:
 
 [![endorsed by zimbatm](./endorsed.svg)](https://zimbatm.com/endorsed/)
 
