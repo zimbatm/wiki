@@ -1,4 +1,4 @@
-# endorsed by zimbatm
+# ENDORSED BY ZIMBATM :bomb:
 
 Writing software as a lazy programmer is all about looking at the landscape
 and finding the minimum amount of work to achieve a certain goal. Look at what
@@ -11,9 +11,8 @@ actually it takes some genius (or madness?) just to have had the idea to do
 it. Just like some movies are so bad that they become good, some software are
 so unexpected that it makes my senses tingle.
 
-So this page is about celebrating these gems. I will be creating a badge and
-submit PRs to projects that fit that vague description. And if you find a gem,
-please ping me and I will be glad to review them.
+So this page is about celebrating these gems. Please don't take it too
+seriously :smile: .
 
 ## Badge
 
