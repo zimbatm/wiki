@@ -1,105 +1,93 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="525.82599"
-   height="488.38495"
+   width="148mm"
+   height="105mm"
+   viewBox="0 0 148 105"
    version="1.1"
-   id="svg37"
-   sodipodi:docname="satisfaction-guarnteed-stamp-red.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+   id="svg8"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   sodipodi:docname="endorsed.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="186.15873"
+     inkscape:cy="320"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="mm"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="2556"
+     inkscape:window-height="1030"
+     inkscape:window-x="2"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata220">
+     id="metadata5">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <defs
-     id="defs218" />
-  <sodipodi:namedview
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1"
-     objecttolerance="10"
-     gridtolerance="10"
-     guidetolerance="10"
-     inkscape:pageopacity="0"
-     inkscape:pageshadow="2"
-     inkscape:window-width="2556"
-     inkscape:window-height="1030"
-     id="namedview216"
-     showgrid="false"
-     inkscape:zoom="1.7199547"
-     inkscape:cx="160.58472"
-     inkscape:cy="244.19247"
-     inkscape:window-x="2"
-     inkscape:window-y="25"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="svg37" />
-  <circle
-     id="svg_3"
-     cy="241.61694"
-     cx="252.17265"
-     r="166"
-     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:square" />
-  <circle
-     id="svg_2"
-     cy="240.6149"
-     cx="257.91315"
-     r="228.99998"
-     style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:square" />
-  <rect
-     transform="rotate(7.82856)"
-     id="svg_1"
-     height="106.10445"
-     width="565.21454"
-     y="150.22678"
-     x="12.511574"
-     style="fill:#ff0000;stroke:#000000;stroke-width:3;stroke-linecap:square" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:'Cantarell, Normal';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
-     id="text45"><textPath
-       startOffset="65%"
-       xlink:href="#svg_3-9"
-       id="textPath80">ENDORSED BY</textPath></text>
-  <flowRoot
-     xml:space="preserve"
-     id="flowRoot47"
-     style="fill:black;fill-opacity:1;stroke:none;font-family:Cantarell;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Cantarell;font-stretch:normal;font-variant:normal"><flowRegion
-       id="flowRegion49"><rect
-         id="rect51"
-         width="295"
-         height="42"
-         x="132"
-         y="55.384949" /></flowRegion><flowPara
-       id="flowPara53" /></flowRoot>  <path
-     style="fill:none;stroke:#000000;stroke-width:0"
-     d="M 434.04149,241.38495 A 182.04149,182.04149 0 0 1 252,423.42644 182.04149,182.04149 0 0 1 69.958511,241.38495 182.04149,182.04149 0 0 1 252,59.34346 182.04149,182.04149 0 0 1 434.04149,241.38495 Z"
-     id="svg_3-9"
-     inkscape:connector-curvature="0" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path222"
-     d="M 461.9492,241.38495 A 209.9492,209.9492 0 0 0 252,31.435749 209.9492,209.9492 0 0 0 42.0508,241.38495 209.9492,209.9492 0 0 0 252,451.33415 209.9492,209.9492 0 0 0 461.9492,241.38495 Z"
-     style="fill:none;stroke:#000000;stroke-width:0" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-     id="text97"><textPath
-       startOffset="65%"
-       xlink:href="#path222"
-       id="textPath99"><tspan
-   id="tspan95">ZIMBATM</tspan></textPath></text>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-192)">
+    <g
+       id="g4537"
+       transform="matrix(0.94494814,-0.31016775,0.31016775,0.94494814,-73.873895,32.39849)">
+      <rect
+         ry="11.1125"
+         style="fill:none;stroke:#e40000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         y="219.22971"
+         x="5.2725787"
+         height="58.438515"
+         width="139.17271"
+         id="rect10" />
+      <text
+         id="text4526"
+         y="267.31131"
+         x="19.75021"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.55640221px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;word-spacing:0px;fill:#f00000;fill-opacity:1;stroke:none;stroke-width:0.58891004"
+         xml:space="preserve"><tspan
+           style="fill:#f00000;fill-opacity:1;stroke-width:0.58891004"
+           y="267.31131"
+           x="19.75021"
+           id="tspan4524"
+           sodipodi:role="line">ZIMBATM</tspan></text>
+      <text
+         id="text4530"
+         y="241.42104"
+         x="18.769032"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.82901478px;line-height:1.25;font-family:Cantarell;-inkscape-font-specification:Cantarell;letter-spacing:0px;word-spacing:0px;fill:#f20000;fill-opacity:1;stroke:none;stroke-width:0.39572537;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="fill:#f20000;fill-opacity:1;stroke:none;stroke-width:0.39572537;stroke-opacity:1"
+           y="241.42104"
+           x="18.769032"
+           id="tspan4528"
+           sodipodi:role="line">ENDORSED BY</tspan></text>
+    </g>
+  </g>
 </svg>
