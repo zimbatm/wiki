@@ -1,7 +1,8 @@
 { pkgs ? import <nixpkgs> {} }:
 pkgs.mkShell {
   buildInputs = [
-    pkgs.mdsh
+    pkgs.coreutils
     pkgs.hyperfine
+    pkgs.mdsh
   ];
 }
