@@ -15,7 +15,7 @@ the website.
 
 ## Past projects
 
-* Planning [NixCon](https://nixcon.org)
+* Planning [NixCon 2018](https://nixcon2018.org)
 
 ## Maintained projects
 
