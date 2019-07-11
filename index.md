@@ -5,7 +5,7 @@ the website.
 
 ## Posts
 
-* [Nix build benchmarking experiment](experiment-nix-benchmark)
+* [Benchmarking nixpkgs builds](benchmark-nixpkgs)
 * [Recursive Nix experiment](experiment-recursive-nix)
 * [Deploying Kubernetes apps with KubeNix](deploying-k8s-apps-with-kubenix)
 
