@@ -186,7 +186,24 @@ Summary
 ```
 ## Findings
 
-TODO
+nixpkgs adds a ~6x overhead to evaluation of a single derivation. It's
+important to note that this might be reduced when evaluating multiple builds
+at the same time.
+
+`pkgs.runCommandNoCC` is marginally faster than `stdenv.mkDerivation`.
+Changing builds in nixpkgs to use it is probably not worth the effort.
+
+A build takes at least 1 second in all the scenarios. This is quite a massive
+overhead for doing almost nothing. This is with the nix client talking to the
+daemon and the daemon running the build inside of a sandbox.
+
+## Future work
+
+It would be interesting to trace the nix evaluation in nixpkgs and find out
+what is adding to the evaluation time exactly.
+
+It would be interesting to run sysdig or some other system-level performance
+tool to figure out what the daemon is doing exactly during the builds.
 
 ## Want to reproduce the example?
 
