@@ -1,6 +1,6 @@
-# First run ./get-sandbox-shell to get the static busybox
 let
   system = builtins.currentSystem;
+  # Run ./get-busybox to get a copy of the static busybox
   busybox = ./busybox;
   now = builtins.exec ["date" "+\"%s.%N\""];
 in
