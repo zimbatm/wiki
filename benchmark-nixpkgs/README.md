@@ -205,6 +205,10 @@ what is adding to the evaluation time exactly.
 It would be interesting to run sysdig or some other system-level performance
 tool to figure out what the daemon is doing exactly during the builds.
 
+## See also
+
+* [Chroot builds are slow #179](https://github.com/NixOS/nix/issues/179)
+
 ## Want to reproduce the example?
 
 1. Get a copy of the wiki from https://github.com/zimbatm/wiki
