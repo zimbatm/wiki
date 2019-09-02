@@ -181,8 +181,9 @@ On the non-cached case it will be much slower than using IFD.
 
 ## See also
 
-* [RET cont RFC](https://discourse.nixos.org/t/new-rfcs-40-ret-cont-recursive-nix-open-for-shepherd-nominations/2075)
+* https://github.com/NixOS/nix/issues/13
 * [@edolstra's Nix experiment](https://github.com/edolstra/nix/commit/1a27aa7d64ffe6fc36cfca4d82bdf51c4d8cf717)
+* [RET cont RFC](https://discourse.nixos.org/t/new-rfcs-40-ret-cont-recursive-nix-open-for-shepherd-nominations/2075)
 
 ## Comments
 
