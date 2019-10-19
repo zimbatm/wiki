@@ -14,7 +14,6 @@ slide: <https://hackmd.io/@zimbatm/ryBTh1D24>
 
 keywords: #pure, #functional, #lazy
 
-
 ---
 
 Once upon a time...
@@ -78,7 +77,7 @@ stdenv.mkDerivation rec {
 ```nix
 with import <nixpkgs> {};
 mkShell {
-  buildInputs = [ go ];
+  buildInputs = [ mdsh ];
 }
 ```
 
@@ -181,8 +180,10 @@ args
 
 ## `builtins`
 
-* `toString <arg>`
+* `toString <value>`
 * `import <path>`
+* `throw <string>`
+* `derivation <attrs>`
 * `builtins.toJSON <value>`
 
 ---
@@ -200,8 +201,6 @@ let
 in
   hello
 ```
-
-talk about scoping
 
 ---
 
@@ -248,6 +247,8 @@ pkgs:
   cmake = pkgs.cmake;
 }
 ```
+
+---
 
 ```nix
 pkgs: {
@@ -325,9 +326,18 @@ true -> false
 ## string interpolation
 
 ```nix
+pkgs:
 '''
-  ${toString 4}
+  ${pkgs.hello}/bin/hello > $out
 '''
+```
+
+---
+
+## more
+
+```nix
+{ a = 4; } // { b = 5; }
 ```
 
 ---
@@ -336,12 +346,15 @@ true -> false
 
 ---
 
-# functional, lazy, pure
+## Functional
 
+## Lazy
+
+## Pure
 
 ---
 
-# debugging
+# Debugging
 
 ## `error: cannot coerce an integer to a string`
 
@@ -374,7 +387,9 @@ in
 
 ---
 
-# TODO
+# The end
 
-Debugging
+* <https://github.com/NixOS/nixpkgs>
+* `nix repl`
 
+Thanks for listening!
