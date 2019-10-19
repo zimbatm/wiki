@@ -48,19 +48,109 @@ Like any skills, it stays shape when trained regularily.
 
 Learning is also reading what other people are doing. Study the masters.
 
-## Keep the complexity down
 
-## Learn how to communicate
+## V2
+
+This article is for myself and is more of a brain dump for now.
+
+Is it possible to decompose software development as a disciplin?
+
+## Communication
 
 Learning how to describe issues, communicate with management, is an integral
 part of the disciplin.
 
-## Health basics
+### Learn english very well
+
+Having the vocabulary to name variables accurately and precisely is important
+to convey what your code will do.
+
+Being able to read fluently helps immensely to acquire new knowledge.
+
+### Learn how to talk to the business people
+
+I like to take the socratic approach and ask a lot of questions. Questions are
+rarely unwelcome in my opinion because they show interest.
+
+Being able to accurately convey the state of the code base is crutial to get
+management buy-in for addressing code debts.
+
+## Reduce frictions
+
+Being aware of frictions in the daily workflow and addressing them creates a
+positive productivity loop.
+
+### Reduce complexity as much as possible
+
+Code has a mass. The less code you have, the easier it is to change it.
+
+### Learn how to type
+
+Learn how to type faster than your train of thoughts.
+
+## Brain stuff
+
+How much context can you hold into your brain at the same time?
+It would be interesting to know if this is a fix-sized limit or if it can be
+increased. What I know for sure is that the lack of sleep reduces that space
+dramatically.
+
+### Walk away from the computer
+
+Thinking is best done away from the computer.
+
+### Stop when you are tired
+
+I find that it's hard to know when I stopped being productive.
+
+I noticed that video games that require 
+
+## Health stuff
 
 Necessary to keep the brain in shape.
 
 * exercise
 * drink water
-* always get a good night of sleep
 * healthy diet, whatever that is
+
+### ALWAYS get a good night of sleep!!!
+
+This is so important. Sleep is an interesting subject.
+
+One common misconception is that if you miss 1 hour of sleep one day, it's
+enough to sleep another hour more the next day. This is completely false! It
+takes a long time to recover from a lack of sleep. Some scientists believe
+that we never entirely recover.
+
+A lack of sleep has an impact on every part of the body:
+* more cancers
+* less muscles
+* less energy
+* less brain activity
+* fat storage
+
+### Move your body
+
+30min of walk every day
+
+## Fighting procrastination
+
+A big topic right there
+
+
+## Programming techniques
+
+Obviously software design patterns are important. 
+
+## problem solving and core coding skills.
+
+
+
+
+## TODO
+
+
+* https://lobste.rs/s/xigh0i/what_makes_someone_good_programmer
+* The Pragmatic Programmer book
+* https://twitter.com/zimbatm/status/1153978311879602176?s=20
 
