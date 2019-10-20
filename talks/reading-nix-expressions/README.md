@@ -10,7 +10,7 @@ description: View the slide with "Slide Mode".
 
 by zimbatm <https://zimbatm.com>
 
-slide: <https://hackmd.io/@zimbatm/ryBTh1D24>
+slide: <https://zimbatm.com/talks/reading-nix-expressions/>
 
 keywords: #pure, #functional, #lazy
 
@@ -178,6 +178,8 @@ talk about scoping
 args
 ```
 
+---
+
 ## `builtins`
 
 * `toString <value>`
@@ -290,7 +292,7 @@ in
 
 ```nix
 {
-   a.b.c = 4;
+  fileSystems."/".device = "/dev/disk/by-label/nixos";
 }
 ```
 
