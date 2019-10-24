@@ -18,6 +18,8 @@ keywords: #pure, #functional, #lazy
 
 Once upon a time...
 
+nixpkgs <https://github.com/NixOS/nixpkgs>
+
 ---
 
 ## `pkgs/applications/misc/hello/default.nix`
@@ -185,8 +187,11 @@ args
 * `toString <value>`
 * `import <path>`
 * `throw <string>`
-* `derivation <attrs>`
+* `map <fn> <list>`
+* `builtins.trace <string> <value>`
+* `builtins.fromJSON <string>`
 * `builtins.toJSON <value>`
+* ...
 
 ---
 
@@ -342,6 +347,14 @@ pkgs:
 { a = 4; } // { b = 5; }
 ```
 
+```nix
+[ 1 ] ++ [ 4 ]
+```
+
+```nix
+4 * 5 / 2
+```
+
 ---
 
 # Interlude
@@ -356,41 +369,25 @@ pkgs:
 
 ---
 
-# Debugging
+## missing topics
 
-## `error: cannot coerce an integer to a string`
+* how to debug
+* __functor and __toString
+* the derivation
+* string context
 
-add `toString`
+---
 
-## `__toString`
+## recap
 
-```nix
-let
-  obj = {
-    name = "foo";
-    __toString = self: self.name;
-  };
-in
-  "${obj}"
-# => "foo"
-```
-
-## `__functor`
-
-```nix
-let
-  adder = {
-    __functor = a: b: a + b;
-  }
-in
-  adder 4 5
-# => 9
-```
+* pure and function scripting language
+* hopefully you are able to read nix code
 
 ---
 
 # The end
 
+* <https://nixos.org/nix/manual>
 * <https://github.com/NixOS/nixpkgs>
 * `nix repl`
 
