@@ -11,15 +11,17 @@ the website.
 
 ## Current projects
 
-* [nixpkgs-fmt](https://nix-community.github.io/nixpkgs-fmt)
+* [NixFriday](NixFriday.md) - a weekly online teaching session
 
 ## Past projects
 
+* Planning [NixCon 2019](https://2019.nixcon.org)
 * Planning [NixCon 2018](https://nixcon2018.org)
 
 ## Maintained projects
 
-* [BuiltWithNix](BuiltWithNix.md)
+* [nixpkgs-fmt](https://nix-community.github.io/nixpkgs-fmt) - a nix code formatter
+* [BuiltWithNix](BuiltWithNix.md) - landing page for Nix
 * [Hostnames and usernames to reserve](https://zimbatm.github.io/hostnames-and-usernames-to-reserve/)
 * [direnv](https://direnv.net) - per directory environment variables
 * [docker-nixpkgs](https://github.com/nix-community/docker-nixpkgs) - docker images straight out of nixpkgs
