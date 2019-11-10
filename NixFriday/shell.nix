@@ -7,6 +7,9 @@ let
 in
   pkgs.mkShell {
     buildInputs = [
+      # tool to do some drawing
+      pkgs.xournal
+      # OBS streaming tool
       pkgs.obs-studio
     ];
 
