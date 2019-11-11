@@ -11,7 +11,7 @@ the website.
 
 ## Current projects
 
-* [NixFriday](NixFriday.md) - a weekly online teaching session
+* [NixFriday](NixFriday) - a weekly online teaching session
 
 ## Past projects
 
