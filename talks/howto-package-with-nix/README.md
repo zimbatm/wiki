@@ -84,7 +84,7 @@ in
 , meta = {}
 , passthru  ? {}
  
-}
+}: ...
 ```
 
 ---
@@ -112,7 +112,7 @@ in
   # installCheckPhase
 , doInstallCheck ? false
 
-}
+}: ...
 ```
 
 ---

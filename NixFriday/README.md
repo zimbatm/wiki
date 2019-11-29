@@ -29,7 +29,9 @@ we'll see.
 
 ## Where
 
-I wanted to try out Twitch: <https://www.twitch.tv/zimbatm/>
+* Twitch for live streaming: <https://www.twitch.tv/zimbatm/>
+* YouTube channel for old recordings:
+  <https://www.youtube.com/watch?v=5doOHe8mnMU&list=PLuVXx3vBwgelE9hbg5lH4w-JFU7llOqtI>
 
 ## When
 
