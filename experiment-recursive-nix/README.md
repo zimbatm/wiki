@@ -1,5 +1,8 @@
 # Recursive Nix experiment
 
+Update(2019-12-02): native recursive nix support has been [merged into
+master](https://github.com/NixOS/nix/commit/ac2bc721d84f3c6c214212e41808a45fa792c6e8)
+
 Recursive Nix is the idea that Nix could be invoked from withing a Nix build.
 This is not my idea, it's been around in the community. @edolstra (the creator
 of Nix) has been talking about it.
