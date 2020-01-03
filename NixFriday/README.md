@@ -40,6 +40,8 @@ both participants.
 
 <iframe src="https://calendar.google.com/calendar/embed?src=zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
+If you want to import the calendar, here is the [calendar iCal](https://calendar.google.com/calendar/ical/zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com/public/basic.ics)
+
 ## How to participate
 
 I need students and topics!
