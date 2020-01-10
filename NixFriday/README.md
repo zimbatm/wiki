@@ -1,46 +1,61 @@
-# Nix Friday
+```
+ _____________ 
+< Nix Friday! >
+ ------------- 
+       \     (\/)
+        \   (_o |
+             /  |
+             \  \______
+              \        )o
+               /|----- |
+               \|     /|
+```
 
-When planning for the "[how to read Nix expressions][1]" course for NixCon, I
-expected to have a small turnout. Maybe 4-10 people maximum. This was a
-second track, not very well advertised. So imagine my surprise when the room
-filled up completely!
+Nix Friday is a weekly stream where we talk about Nix.
 
-This made me realize that there is actually a need to teach Nix directly.
-Without reading the manual, asking questions on Discourse and all the other
-resources available.
-
-So this project is an experiment to see if I can reproduce the NixCon
-experience online. That way we don't have to wait another year :)
-
-## Implementation
-
-Since I have never done this before there is probably a lot to learn on my
-side as well.
-
-The current idea is to invite 1 student per teaching lesson to get that
-interactive classroom feeling. It might work with more but online is a bit
-different. There is lag and less clues that make it more likely to step over
-each-other. So let's start with one.
-
-The whole course is streamed and bystanders are welcome to comment in the
-chat, and we will try to pick those questions up as well. Ideally this would
-be the task of the student as I will already be busy thinking and speaking but
-we'll see.
+Most of the time the session is a 1:1 with a student that wants to learn about
+a specific topic. Sometimes we have guests. Sometimes it's just me talking
+about Nix-related projects.
 
 ## Where
 
-* Twitch for live streaming: <https://www.twitch.tv/zimbatm/>
-* YouTube channel for old recordings:
-  <https://www.youtube.com/watch?v=5doOHe8mnMU&list=PLuVXx3vBwgelE9hbg5lH4w-JFU7llOqtI>
+<https://twitch.tv/zimbatm>
+
+<iframe
+    src="https://player.twitch.tv/?channel=zimbatm"
+    width="100%"
+    height="600"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
 
 ## When
 
-Every Friday. The timeslot will vary depending on availability and timezone of
-both participants.
+Every Friday. The timeslot will vary depending on availability of both
+participants.
 
-<iframe src="https://calendar.google.com/calendar/embed?src=zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe
+  src="https://calendar.google.com/calendar/embed?src=zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com&ctz=Europe%2FParis"
+  width="100%"
+  height="600"
+  frameborder="0"
+  scrolling="no"
+></iframe>
 
-If you want to import the calendar, here is the [calendar iCal](https://calendar.google.com/calendar/ical/zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com/public/basic.ics)
+Import the [calendar iCal](https://calendar.google.com/calendar/ical/zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com/public/basic.ics).
+
+## Recordings
+
+<https://www.youtube.com/watch?v=5doOHe8mnMU&list=PLuVXx3vBwgelE9hbg5lH4w-JFU7llOqtI>
+
+<iframe
+  src="https://www.youtube-nocookie.com/embed/videoseries?list=PLuVXx3vBwgelE9hbg5lH4w-JFU7llOqtI"
+  width="100%"
+  height="315"
+  frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
 
 ## How to participate
 

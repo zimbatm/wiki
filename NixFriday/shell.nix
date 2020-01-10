@@ -11,6 +11,10 @@ in
       pkgs.xournal
       # OBS streaming tool
       pkgs.obs-studio
+
+      pkgs.cool-retro-term
+
+      pkgs.grim
     ];
 
     shellHook = ''
