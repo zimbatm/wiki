@@ -1,9 +1,5 @@
 let
-  sources = import ./nix/sources.nix;
-  pkgs = import sources.nixpkgs {
-    config = {};
-    overlays = [];
-  };
+  pkgs = import ../nix;
 in
   pkgs.mkShell {
     buildInputs = [
