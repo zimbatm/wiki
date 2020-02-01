@@ -1,5 +1,9 @@
 # Linux needs a Keyring program
 
+Update: it looks like the kernel has a keyring now!
+http://man7.org/linux/man-pages/man7/keyrings.7.html . We are just missing a
+good UI now.
+
 A keyring is a process that is started on user-session login and contains all
 of the secret keys of the users. It is responsible for securing those keys and
 control access to those to a limited set of processes.
