@@ -3,6 +3,9 @@
 This website is my personal scratchpad. See [about](about.md) for more info on
 the website.
 
+If you enjoy my work, you might also be interested in hiring [my Nix
+consulting services](https://numtide.com).
+
 ## Posts
 
 * [Benchmarking nixpkgs builds](benchmark-nixpkgs)
