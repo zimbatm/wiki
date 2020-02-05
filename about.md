@@ -31,4 +31,7 @@ If you want to reach me, [@zimbatm on Twitter](https://twitter.com/zimbatm),
 [GitHub](https://github.com/zimbatm/) and [Mastodon](https://mastodon.social/@zimbatm), send an email to, you guessed
 it, [zimbatm@zimbatm.com](mailto:zimbatm@zimbatm.com) .
 
+My GPG key fingerprint is 2603 53B9 93F8 CE16 752E  F48C 71BA F6D4 0C1D 63D7
+and retrievable using [WKS](https://wiki.gnupg.org/WKS).
+
 The median response time is around 24 hours but can trail up to a week!
