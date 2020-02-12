@@ -29,6 +29,8 @@ about Nix-related projects.
     allowfullscreen>
 </iframe>
 
+Discord: https://discord.gg/vVjpGfM
+
 ## When
 
 Every Friday. The timeslot will vary depending on availability of both
