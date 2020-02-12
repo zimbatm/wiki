@@ -29,7 +29,16 @@ about Nix-related projects.
     allowfullscreen>
 </iframe>
 
-Discord: https://discord.gg/vVjpGfM
+Discord: <https://discord.gg/vVjpGfM>
+
+<iframe
+  src="https://discordapp.com/widget?id=568306982717751326&amp;theme=dark"
+  width="350"
+  height="500"
+  allowtransparency="true"
+  frameborder="0"
+>
+</iframe>
 
 ## When
 
