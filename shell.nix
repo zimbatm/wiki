@@ -1,4 +1,5 @@
-with import ./nix;
+{ pkgs ? import ./nix {} }:
+with pkgs;
 mkShell {
   buildInputs = [
     bundix
@@ -9,6 +10,6 @@ mkShell {
   ];
 
   shellHook = ''
-    export NIX_PATH=nixpkgs=${path}
+    export NIX_PATH=nixpkgs=${toString ./nix}
   '';
 }

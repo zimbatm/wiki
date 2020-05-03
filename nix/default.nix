@@ -1,6 +1,9 @@
+{ nixpkgs ? (import ./sources.nix).nixpkgs
+, system ? builtins.currentSystem
+}:
 let
-  sources = import ./sources.nix;
-  pkgs = import sources.nixpkgs {
+  pkgs = import nixpkgs {
+    inherit system;
     config = {};
     overlays = [ overlay ];
   };
