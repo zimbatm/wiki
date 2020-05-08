@@ -3,9 +3,8 @@ composed together.
 
 https://nixos.org
 
+## Topics
 
-## Idea scratch pag
-
-### Nix CLI
-
-Group commands by topic.
+* [Nix Flakes](NixFlakes) is an experiment dependency manager for nix
+* [nixpkgs-fmt](https://nix-community.github.io/nixpkgs-fmt) is a nix code
+  formatter.
