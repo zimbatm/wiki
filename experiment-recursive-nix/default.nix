@@ -1,7 +1,7 @@
-with import <nixpkgs> {};
+with import <nixpkgs> { };
 runCommand
-"recursive-nix"
+  "recursive-nix"
 { buildInputs = [ nix ]; }
-''
-  NIX_PATH=nixpkgs=${pkgs.path} nix-build ${./inner.nix} > $out
-''
+  ''
+    NIX_PATH=nixpkgs=${pkgs.path} nix-build ${./inner.nix} > $out
+  ''

@@ -25,7 +25,7 @@ in
         metadata.labels = labels;
         spec.volumes."server-data".persistentVolumeClaim.claimName = claimName;
 
-        spec.imagePullSecrets."gitlab-registry" = {};
+        spec.imagePullSecrets."gitlab-registry" = { };
         spec.containers.server = {
           name = "${app}-server";
           image = "${registry}/server:${imageTag}";
@@ -56,7 +56,7 @@ in
     spec = {
       resources.requests.storage = "5Gi";
       # ReadWriteOnce – the volume can be mounted as read-write by a single node
-      accessModes = ["ReadWriteOnce"];
+      accessModes = [ "ReadWriteOnce" ];
     };
   };
 

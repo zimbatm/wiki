@@ -1,10 +1,10 @@
 let
   pkgs = import <nixpkgs> {
-    config = {};
-    overlays = [];
+    config = { };
+    overlays = [ ];
   };
-  now = builtins.exec ["date" "+\"%s.%N\""];
+  now = builtins.exec [ "date" "+\"%s.%N\"" ];
 in
-  pkgs.runCommandNoCC "run-command-no-cc" {} ''
-    echo ${now} > $out
-  ''
+pkgs.runCommandNoCC "run-command-no-cc" { } ''
+  echo ${now} > $out
+''

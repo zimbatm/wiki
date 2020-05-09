@@ -4,12 +4,11 @@
 let
   pkgs = import nixpkgs {
     inherit system;
-    config = {};
+    config = { };
     overlays = [ overlay ];
   };
-
   overlay = self: pkgs: {
-    github-pages = pkgs.callPackage ./pkgs/github-pages {};
+    github-pages = pkgs.callPackage ./pkgs/github-pages { };
   };
 in
-  pkgs
+pkgs

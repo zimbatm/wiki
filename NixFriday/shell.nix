@@ -1,21 +1,21 @@
 let
   pkgs = import ../nix;
 in
-  pkgs.mkShell {
-    buildInputs = [
-      # tool to do some drawing
-      pkgs.xournal
-      # OBS streaming tool
-      pkgs.obs-studio
+pkgs.mkShell {
+  buildInputs = [
+    # tool to do some drawing
+    pkgs.xournal
+    # OBS streaming tool
+    pkgs.obs-studio
 
-      pkgs.cool-retro-term
+    pkgs.cool-retro-term
 
-      pkgs.grim
-    ];
+    pkgs.grim
+  ];
 
-    shellHook = ''
-      export XDG_CONFIG_HOME=$PWD/config
-      mkdir -p config/obs-studio/plugins/
-      ln -sfT ${pkgs.obs-wlrobs}/share/obs/obs-plugins/wlrobs config/obs-studio/plugins/wlrobs
-    '';
-  }
+  shellHook = ''
+    export XDG_CONFIG_HOME=$PWD/config
+    mkdir -p config/obs-studio/plugins/
+    ln -sfT ${pkgs.obs-wlrobs}/share/obs/obs-plugins/wlrobs config/obs-studio/plugins/wlrobs
+  '';
+}
