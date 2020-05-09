@@ -8,3 +8,5 @@ https://nixos.org
 * [Nix Flakes](NixFlakes) is an experiment dependency manager for nix
 * [nixpkgs-fmt](https://nix-community.github.io/nixpkgs-fmt) is a nix code
   formatter.
+* [Benchmarking nixpkgs builds](benchmark-nixpkgs)
+* [Recursive Nix experiment](experiment-recursive-nix)

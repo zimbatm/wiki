@@ -12,7 +12,7 @@ Chi Gong and Tai Chi look interesting[2]
 
 # Training program
 
-it's not necessary to do power training!
+It's not necessary to do power training!
 
 https://www.youtube.com/watch?v=_fbCcWyYthQ
 
