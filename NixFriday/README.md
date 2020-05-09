@@ -11,6 +11,8 @@
                \|     /|
 ```
 
+**NOTE**: Due to lack of personal time, Nix Friday is current on hold :-/
+
 Nix Friday is a weekly stream where we talk about Nix.
 
 Most of the time the session is a 1:1 with a student that wants to learn about
