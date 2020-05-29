@@ -1,8 +1,7 @@
 {
   description = "Personal wiki & journal";
-  edition = 201909;
 
-  inputs.utils.uri = "github:numtide/flake-utils";
+  inputs.utils.url = "github:numtide/flake-utils";
 
   outputs = { self, nixpkgs, utils }:
     utils.lib.eachDefaultSystem
