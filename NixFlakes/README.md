@@ -46,7 +46,9 @@ In your repo, run `nix flake init` to generate the `flake.nix` file. Then run
 `git add flake.nix` to add it to the git staging area, otherwise nix will not
 recognize that the file exists.
 
-TODO: add more usage examples here
+TODO: add more usage examples here.
+
+TODO: explain the flake.nix schema.
 
 ## Super fast nix-shell
 
@@ -78,7 +80,6 @@ Now create a `flake.nix` file in the same repository:
 ```nix
 {
   description = "my project description";
-  edition = 201909;
   
   inputs.utils.uri = "github:numtide/flake-utils";
 
@@ -121,3 +122,9 @@ With this in place, you can now replace the `use nix` invocation in the
 
 The nice thing about this approach is that evaluation is cached, and that the
 project's shell is now protected from the nix garbage-collector.
+
+## FAQ
+
+* Q: How to build specific attributes in a flake repository?
+* A: Use `nix build .#<attr>`. Eg: `nix build .#hello`.
+
