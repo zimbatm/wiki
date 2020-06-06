@@ -50,6 +50,8 @@ TODO: add more usage examples here.
 
 TODO: explain the flake.nix schema.
 
+See also https://www.tweag.io/blog/2020-05-25-flakes/
+
 ## Super fast nix-shell
 
 One of the nix feature of the Flake edition is that Nix evaluations are
