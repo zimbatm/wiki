@@ -125,8 +125,19 @@ With this in place, you can now replace the `use nix` invocation in the
 The nice thing about this approach is that evaluation is cached, and that the
 project's shell is now protected from the nix garbage-collector.
 
+## Pushing Flake inputs to cachix
+
+Flake inputs can also be cached in the Nix binary cache!
+
+```sh
+nix flake archive --json \
+  | jq -r '.path,(.inputs|to_entries[].value.path)' \
+  | cachix push $cache_name
+```
+
 ## FAQ
 
 * Q: How to build specific attributes in a flake repository?
 * A: Use `nix build .#<attr>`. Eg: `nix build .#hello`.
+
 
