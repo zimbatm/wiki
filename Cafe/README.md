@@ -16,8 +16,26 @@ motivation.
 * Break out into other rooms for 1:1 discussions.
 * Enjoy!
 
+## Cafe
+
 URL: https://meet.jit.si/zimbatm-cafe
 
+<div id="meet"></div>
+
+<script src='https://meet.jit.si/external_api.js'></script>
+<script>
+const api = new JitsiMeetExternalAPI("meet.jit.si", {
+  roomName: "zimbatm-cafe",
+  width: "100%",
+  height: 700,
+  parentNode: document.querySelector("#meet"),
+  configOverwrite: { startWithAudioMuted: true },
+});
+</script>
+
 ## Setup
+
+TODO: it would be nice to have some background music or a DJ. Maybe tied to a
+Spotify or YouTube Music account?
 
 https://askubuntu.com/questions/421014/share-an-audio-playback-stream-through-a-live-audio-video-conversation-like-sk
