@@ -8,8 +8,11 @@ motivation.
 
 ## Etiquette
 
-* **No talking!** - people are focused on their work.
-* Feel free to wave, smile or communicate in the chat.
+* **No talking!** - people are focused on their work. But feel free to wave
+  and smile when joining :-)
+* Keep your camera on. The point is to see other people working and make this
+  symmetrical.
+* Mute yourself if you have a noisy background environment.
 * Break out into other rooms for 1:1 discussions.
 * Enjoy!
 
