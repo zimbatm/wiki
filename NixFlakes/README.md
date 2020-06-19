@@ -15,9 +15,9 @@ Add the following options to the NixOS configuration:
 ```nix
 { pkgs, ... }:
 {
-  # install the flakes edition
+  # Install the flakes edition
   nix.package = pkgs.nixFlakes;
-  # enable the nix 2.0 CLI and flakes support feature-flags
+  # Enable the nix 2.0 CLI and flakes support feature-flags
   nix.extraOptions = ''
     experimental-features = nix-command flakes 
   '';
@@ -100,7 +100,7 @@ Let's say that your project has a `shell.nix` file that looks like this:
 
 [$ shell.nix](shell.nix) as nix
 ```nix
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> { } }:
 with pkgs;
 mkShell {
   buildInputs = [
@@ -121,16 +121,17 @@ Now create a `flake.nix` file in the same repository:
 ```nix
 {
   description = "my project description";
-  
-  inputs.utils.uri = "github:numtide/flake-utils";
 
-  outputs = { self, nixpkgs, utils }:
-    utils.lib.eachDefaultSystem (system:
-      let pkgs = nixpkgs.legacyPackages.${system}; in
-      {
-        devShell = import ./shell.nix { inherit pkgs; };
-      }
-    );
+  inputs.flake-utils.url = "github:numtide/flake-utils";
+
+  outputs = { self, nixpkgs, flake-utils }:
+    flake-utils.lib.eachDefaultSystem
+      (system:
+        let pkgs = nixpkgs.legacyPackages.${system}; in
+        {
+          devShell = import ./shell.nix { inherit pkgs; };
+        }
+      );
 }
 ```
 
