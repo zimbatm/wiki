@@ -56,21 +56,24 @@ See also https://www.tweag.io/blog/2020-05-25-flakes/
 
 Here is what I found out while reading `src/nix/flake.cc` in `CmdFlakeCheck`.
 
-Where `<system>` is something like "x86_64-linux" and `<name>` some kind of
-attribute name like "hello".
+Where:
+* `<system>` is something like "x86_64-linux".
+* `<attr>` is an attribute name like "hello".
+* `<flake>` is a flake name like "nixpkgS".
+* `<store-path>` is a /nix/store.. path
 
 ```nix
 {
   # Executed by `nix flake check`
-  checks."<system>"."<name>" = derivation;
+  checks."<system>"."<attr>" = derivation;
   # Executed by `nix build .#<name>`
-  packages."<system>"."<name>" = derivation;
+  packages."<system>"."<attr>" = derivation;
   # Executed by `nix build .`
   defaultPackage."<system>" = derivation;
   # Executed by `nix run .#<name>
-  apps."<system>"."<name>" = {
+  apps."<system>"."<attr>" = {
     type = "app";
-    program = "${self.packages.x86_64-linux.hello}/bin/hello";
+    program = "<store-path>";
   };
   defaultApp."<system>" = { type = "app"; program = "..."; };
   
@@ -88,6 +91,13 @@ attribute name like "hello".
   nixosConfigurations = TODO;
   # TODO: Same idea as nixosModule but a list of them.
   hydraJobs = TODO;
+  # Used by `nix flake init -t <flake>`
+  defaultTemplate = {
+    path = "<store-path>";
+    description = "template description goes here?";
+  };
+  # Used by `nix flake init -t <flake>#<attr>`
+  templates."<attr>" = { path = "<store-path>"; description = ""; );
 }
 ```
 
