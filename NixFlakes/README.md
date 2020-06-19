@@ -52,6 +52,45 @@ TODO: explain the flake.nix schema.
 
 See also https://www.tweag.io/blog/2020-05-25-flakes/
 
+### Output schema
+
+Here is what I found out while reading `src/nix/flake.cc` in `CmdFlakeCheck`.
+
+Where `<system>` is something like "x86_64-linux" and `<name>` some kind of
+attribute name like "hello".
+
+```nix
+{
+  # Executed by `nix flake check`
+  checks."<system>"."<name>" = derivation;
+  # Executed by `nix build .#<name>`
+  packages."<system>"."<name>" = derivation;
+  # Executed by `nix build .`
+  defaultPackage."<system>" = derivation;
+  # Executed by `nix run .#<name>
+  apps."<system>"."<name>" = {
+    type = "app";
+    program = "${self.packages.x86_64-linux.hello}/bin/hello";
+  };
+  defaultApp."<system>" = { type = "app"; program = "..."; };
+  
+  # TODO: Not sure how it's being used
+  legacyPackages = TODO;
+  # TODO: Not sure how it's being used
+  overlay = final: prev: { };
+  # TODO: Same idea as overlay but a list of them.
+  overlays = [];
+  # TODO: Not sure how it's being used
+  nixosModule = TODO;
+  # TODO: Same idea as nixosModule but a list of them.
+  nixosModules = [];
+  # TODO: Not sure how it's being used
+  nixosConfigurations = TODO;
+  # TODO: Same idea as nixosModule but a list of them.
+  hydraJobs = TODO;
+}
+```
+
 ## Super fast nix-shell
 
 One of the nix feature of the Flake edition is that Nix evaluations are
