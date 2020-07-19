@@ -54,7 +54,7 @@ See also https://www.tweag.io/blog/2020-05-25-flakes/
 
 ### Output schema
 
-Here is what I found out while reading `src/nix/flake.cc` in `CmdFlakeCheck`.
+Here is what I found out while reading [`src/nix/flake.cc`](https://github.com/NixOS/nix/blob/master/src/nix/flake.cc) in `CmdFlakeCheck`.
 
 Where:
 * `<system>` is something like "x86_64-linux".
