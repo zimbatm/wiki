@@ -215,7 +215,7 @@ Now create a `flake.nix` file in the same repository:
 
 Run `git add flake.nix` so that Nix recognizes it.
 
-And finally, run `nix dev-shell`. This is what replaces the old `nix-shell`
+And finally, run `nix develop`. This is what replaces the old `nix-shell`
 invocation.
 
 Exit and run again, this command should now be super fast.
