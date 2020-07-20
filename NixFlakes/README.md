@@ -5,6 +5,8 @@
 Nix Flakes is an experimental branch of the Nix project that adds dependency
 management and a central entry-point to Nix projects.
 
+[[TOC]]
+
 ## Installation
 
 ### NixOS
@@ -42,6 +44,9 @@ restart the nix-daemon.
 
 ## Basic project usage
 
+> **NOTE**: flake makes a strong assumption that the folder is a git
+  repository. It doesn't work outside of them.
+
 In your repo, run `nix flake init` to generate the `flake.nix` file. Then run
 `git add flake.nix` to add it to the git staging area, otherwise nix will not
 recognize that the file exists.
@@ -51,6 +56,32 @@ TODO: add more usage examples here.
 TODO: explain the flake.nix schema.
 
 See also https://www.tweag.io/blog/2020-05-25-flakes/
+
+## Flake schema
+
+The `flake.nix` file is a Nix file but that has special restrictions (more on
+that later).
+
+It has 3 top-level attributes:
+
+* `description` which is self...describing
+* `input` is an attribute set of all the dependencies of the flake. The schema
+  is described below.
+* `output` is a function of one argument that takes an attribute set of all
+  the realized inputs, and outputs another attribute set which schema is
+  described below.
+
+### Input schema
+
+This is not a complete schema but should be enough to get you started:
+
+```nix
+{
+  inputs.bar = { url = "github:foo/bar/branch"; flake = false; }
+}
+```
+
+The `bar` input is then passes to the 
 
 ### Output schema
 
@@ -63,6 +94,7 @@ Where:
 * `<store-path>` is a /nix/store.. path
 
 ```nix
+{ self, ... }@inputs:
 {
   # Executed by `nix flake check`
   checks."<system>"."<attr>" = derivation;
@@ -100,6 +132,42 @@ Where:
   templates."<attr>" = { path = "<store-path>"; description = ""; );
 }
 ```
+
+## Building NixOS configurations with Flakes
+
+There is a special, undocumented way to build NixOS configurations with
+flakes.
+
+First, change `flake.nix` to output a configuration. This uses the
+`nixosConfigurations` key. The `nixpkgs` flake includes a helper for that:
+
+```nix
+{
+  outputs = { nixpkgs, ... }: {
+    nixosConfigurations.mymachine = nixpkgs.lib.nixosSystem {
+      modules = [
+        # Point this to your original configuration.
+        ./machines/mymachine/configuration.nix
+      ];
+      # Select the target system here.
+      system = "x86_64-linux";
+    };
+  };
+}
+```
+
+Then to switch configurations, use `nixos-rebuild --flake .#mymachine switch`,
+from the same repository where the `flake.nix` file is located.
+
+To switch a remote configuration, use:
+```sh
+nixos-rebuild --flake .#mymachine \
+  --target-host mymachine-hostname --build-host localhost \
+  switch
+```
+
+> **NOTE**: Remote building seems to be broken at the moment, which is why the
+  build host is set to "localhost".
 
 ## Super fast nix-shell
 
@@ -152,6 +220,10 @@ invocation.
 
 Exit and run again, this command should now be super fast.
 
+> **NOTE**: TODO: there is an alternative version where the `defaultPackage` is a
+  `pkgs.buildEnv` that contains all the dependencies. And then `nix shell` is
+  used to open the environment.
+
 ## Direnv integration
 
 If you are using [direnv](https://direnv.net), here is how to replace the old
@@ -191,5 +263,20 @@ nix flake archive --json \
 
 ## FAQ
 
-* Q: How to build specific attributes in a flake repository?
-* A: Use `nix build .#<attr>`. Eg: `nix build .#hello`.
+### How to build specific attributes in a flake repository?
+
+Use `nix build .#<attr>`. Eg: `nix build .#hello`.
+
+### How to build all the attributes in a flake repository?
+
+This isn't supported as far as I know.
+
+Traditionally we would run `nix-build ci.nix` or something equivalent.
+
+Flakes only support building one attribute at the same time. 
+
+### Some file is not found
+
+Flakes only takes files into account if they are either in the git tree.
+You don't necessarily have to commit the files, adding them in the git staging
+area with `git add` is enough.
