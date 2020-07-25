@@ -5,7 +5,7 @@
 Nix Flakes is an experimental branch of the Nix project that adds dependency
 management and a central entry-point to Nix projects.
 
-[[TOC]]
+Here are some notes that I took for myself on the subject.
 
 ## Installation
 
@@ -52,8 +52,6 @@ In your repo, run `nix flake init` to generate the `flake.nix` file. Then run
 recognize that the file exists.
 
 TODO: add more usage examples here.
-
-TODO: explain the flake.nix schema.
 
 See also https://www.tweag.io/blog/2020-05-25-flakes/
 
@@ -226,7 +224,8 @@ Exit and run again, this command should now be super fast.
 
 ## Direnv integration
 
-If you are using [direnv](https://direnv.net), here is how to replace the old
+Assuming that the flake defines a `devShell` output attribute and that you are
+using [direnv](https://direnv.net). Here is how to replace the old
 `use nix` stdlib function with the faster flake version:
 
 [$ use_flake.sh](use_flake.sh) as sh
@@ -247,11 +246,20 @@ With this in place, you can now replace the `use nix` invocation in the
 The nice thing about this approach is that evaluation is cached, and that the
 project's shell is now protected from the nix garbage-collector.
 
+### Optimize the reloads
+
+Nix Flakes has a Nix evaluation caching mechanism. Is it possible to expose
+that somehow to automatically trigger direnv reloads?
+
+With the previous solution, direnv would only reload iff the flake.nix or
+flake.lock files have changed. This is not completely precise as the flake.nix
+file might import other files in the repository.
+
 ## Using with GitHub Actions
 
-https://github.com/numtide/nix-flakes-installer#github-actions
+See https://github.com/numtide/nix-flakes-installer#github-actions
 
-## Pushing Flake inputs to cachix
+## Pushing Flake inputs to Cachix
 
 Flake inputs can also be cached in the Nix binary cache!
 
@@ -261,19 +269,26 @@ nix flake archive --json \
   | cachix push $cache_name
 ```
 
-## FAQ
-
 ### How to build specific attributes in a flake repository?
 
-Use `nix build .#<attr>`. Eg: `nix build .#hello`.
+When in the repository top-level, run `nix build .#<attr>`. It will look in
+the `legacyPackages` and `packages` output attributes for the corresponding
+derivation.
 
-### How to build all the attributes in a flake repository?
+Eg, in nixpkgs:
+ 
+```
+nix build .#hello
+```
 
-This isn't supported as far as I know.
+## Building all the derivations of a flake
 
-Traditionally we would run `nix-build ci.nix` or something equivalent.
+Traditionally we would run `nix-build ci.nix` or something equivalent but
+flakes only support pointing `nix build` to a single derivation.
 
-Flakes only support building one attribute at the same time. 
+I am not 100% confident on this answer: it looks like exposing the derivation
+in the `checks` output attribute, and then running `nix flake check` does the
+trick.
 
 ### Some file is not found
 

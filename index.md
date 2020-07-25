@@ -12,6 +12,11 @@ consulting services](https://numtide.com).
 * [Recursive Nix experiment](experiment-recursive-nix)
 * [Deploying Kubernetes apps with KubeNix](deploying-k8s-apps-with-kubenix)
 
+## Notes & research
+
+* [NixFlakes](NixFlakes) - taking notes on the Nix Flakes branch
+* [DarkMode](DarkMode.md)
+
 ## Current projects
 
 * [NixFriday](NixFriday) - a weekly online teaching session

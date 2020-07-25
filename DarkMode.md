@@ -1,5 +1,7 @@
 # Dark Mode
 
+Dark Mode is an idea promulgated by Apple; invert the theme to use a dark
+background and light text instead.
 
 ## Websites
 
@@ -25,6 +27,9 @@ Ideally they would respect [`prefers-color-scheme: dark`](https://developer.mozi
 ### Browser extension
 
 For all the sites that are not supported: https://darkreader.org/
+
+I noticed that this extension can take quite a bit of CPU. I assume it is
+needed to calculate the inverted colors.
 
 ## Browser Support
 
