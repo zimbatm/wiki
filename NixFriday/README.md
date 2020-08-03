@@ -91,3 +91,9 @@ Bring a problem that you want to solve or topic that you want to learn about.
 * nix performance profiling
  
 [1]: https://www.youtube.com/watch?v=61MuMY9XFNo&t=1963s
+
+## Setup
+
+* OBS
+
+TODO: look into using https://restream.io
