@@ -11,20 +11,19 @@
                \|     /|
 ```
 
-**NOTE**: Due to lack of personal time, Nix Friday is current on hold :-/
+Nix Friday is a weekly stream where we talk about Nix and related technologies.
 
-Nix Friday is a weekly stream where we talk about Nix.
-
-Most of the time the session is a 1:1 with a student that wants to learn about
-a specific topic. Sometimes we have guests. Sometimes it's just me talking
-about Nix-related projects.
+The format has changed a bit over time. Initially it was all about teaching
+Nix. Now, I want to mostly interview and put the spotlight on community
+members mostly. There are too many people doing amazing things, and don't get
+the recognition they deserve.
 
 ## Where
 
 <https://twitch.tv/zimbatm>
 
 <iframe
-    src="https://player.twitch.tv/?channel=zimbatm"
+    src="https://player.twitch.tv/?channel=zimbatm&parent=zimbatm.com"
     width="100%"
     height="600"
     frameborder="0"
@@ -94,6 +93,6 @@ Bring a problem that you want to solve or topic that you want to learn about.
 
 ## Setup
 
-* OBS
+Mostly OBS. And NixOS obviously :)
 
 TODO: look into using https://restream.io
