@@ -233,7 +233,7 @@ using [direnv](https://direnv.net). Here is how to replace the old
 use_flake() {
   watch_file flake.nix
   watch_file flake.lock
-  eval "$(nix print-dev-env --profile "$(direnv_layout_dir)/flake-profile")"
+  eval "$(nix print-dev-env)"
 }
 ```
 
@@ -243,8 +243,7 @@ Copy this in `~/.config/direnv/lib/use_flake.sh` or in
 With this in place, you can now replace the `use nix` invocation in the
 `.envrc` file with `use flake`.
 
-The nice thing about this approach is that evaluation is cached, and that the
-project's shell is now protected from the nix garbage-collector.
+The nice thing about this approach is that evaluation is cached.
 
 ### Optimize the reloads
 
