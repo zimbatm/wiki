@@ -46,6 +46,8 @@ Discord: <https://discord.gg/vVjpGfM>
 Every Friday. The timeslot will vary depending on availability of both
 participants.
 
+Import the [calendar iCal](https://calendar.google.com/calendar/ical/zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com/public/basic.ics).
+
 <iframe
   src="https://calendar.google.com/calendar/embed?src=zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com&ctz=Europe%2FParis"
   width="100%"
@@ -53,8 +55,6 @@ participants.
   frameborder="0"
   scrolling="no"
 ></iframe>
-
-Import the [calendar iCal](https://calendar.google.com/calendar/ical/zimbatm.com_uil4jo9apv8segn33be0ilm4u0%40group.calendar.google.com/public/basic.ics).
 
 ## Recordings
 
