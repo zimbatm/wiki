@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: zimbatm.com
+Token: 51fd0173332a3b948194fafa41cbadbb1ffb1ddb4756dccdc5dc4e1742d7104b
