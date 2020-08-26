@@ -7,6 +7,16 @@ management and a central entry-point to Nix projects.
 
 Here are some notes that I took for myself on the subject.
 
+## Changelog
+
+A non-strict history of things that are happening. Latest in front.
+
+* 2020-08-05: `nix eval <INSTALLABLE> --start-repl-on-eval-errors`. [e5662b](https://github.com/NixOS/nix/commit/e5662ba6525c27248d57d8265e9c6c3a46f95c7e)
+* 2020-07-31: Introduce `nix bundle nixpkgs#jq` which can be used to build installable bundles. [#3880](https://github.com/NixOS/nix/pull/3880)
+* 2020-07-28: Nix version bumped from 2.4 to 3.0 [189e6f5](https://github.com/NixOS/nix/commit/189e6f5e1d949f50ab0b6e5acd25e230d206692d)
+* 2020-07-16: `nix diff-closures <drv1> <drv2>` that shows package version changes between two profiles. [#3818](https://github.com/NixOS/nix/pull/3818_
+* Nix Flakes was merged into master.
+
 ## Installation
 
 ### NixOS
@@ -268,7 +278,7 @@ nix flake archive --json \
   | cachix push $cache_name
 ```
 
-### How to build specific attributes in a flake repository?
+## How to build specific attributes in a flake repository?
 
 When in the repository top-level, run `nix build .#<attr>`. It will look in
 the `legacyPackages` and `packages` output attributes for the corresponding
@@ -289,8 +299,10 @@ I am not 100% confident on this answer: it looks like exposing the derivation
 in the `checks` output attribute, and then running `nix flake check` does the
 trick.
 
-### Some file is not found
+## Some file is not found
 
 Flakes only takes files into account if they are either in the git tree.
 You don't necessarily have to commit the files, adding them in the git staging
 area with `git add` is enough.
+
+
