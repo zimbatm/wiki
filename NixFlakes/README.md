@@ -305,4 +305,37 @@ Flakes only takes files into account if they are either in the git tree.
 You don't necessarily have to commit the files, adding them in the git staging
 area with `git add` is enough.
 
+## Pure evaluation
 
+Because the evaluation in Flakes is "pure", a few things are disabled.
+
+Pure evaluation can also be enabled by using `--option pure-eval true` on
+standard nix CLIs. Eg:
+
+```console
+$ nix-instantiate --option pure-eval true --eval --expr '(builtins.currentTime)'
+error: --- EvalError -------------------------------------------------------------- nix-instantiate
+at: (1:2) from string
+
+     1| (builtins.currentTime)
+      |  ^
+
+attribute 'currentTime' missing
+```
+
+To find these out I searched for `evalSettings.pureEval` in the
+"src/libexpr" folder of the Nix repo.
+
+All these builtins are not defined in pure evaluation:
+
+* `builtins.currentTime -> int`
+* `builtins.currentSystem -> str`
+
+Some more special behaviours:
+
+* `builtins.getEnv str -> str` returns empty strings.
+* `builtins.storePath` throws `'__storePath' is not allowed in pure evaluation mode`
+* `builtins.filterSource` and `builtins.path` has some condition in it, I
+  don't know exactly which.
+* `builtins.fetchTree` also has some conditions.
+* `<foo>` throws `cannot look up '<foo>' in pure evaluation mode (use'--impure' to override)`
