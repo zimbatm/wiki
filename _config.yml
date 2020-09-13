@@ -1,4 +1,4 @@
-theme: jekyll-theme-primer
+remote_theme: numtide/primer
 title: $ zimbatm
 description: "personal wiki and playground"
 url: "https://zimbatm.com"
