@@ -339,3 +339,16 @@ Some more special behaviours:
   don't know exactly which.
 * `builtins.fetchTree` also has some conditions.
 * `<foo>` throws `cannot look up '<foo>' in pure evaluation mode (use'--impure' to override)`
+
+## Running unfree packages
+
+Because Flakes are pure by default, something like `nix run nixpkgs#steam`
+will complain that it's unfree, even if `NIXPKGS_ALLOW_UNFREE=1` is set in the
+environment.
+
+The workaround is to disable the pure evaluation with the `--impure` flag like
+so:
+
+```sh
+NIXPKGS_ALLOW_UNFREE=1 nix run --impure nixpkgs#steam
+```
