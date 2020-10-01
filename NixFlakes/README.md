@@ -17,6 +17,14 @@ A non-strict history of things that are happening. Latest in front.
 * 2020-07-16: `nix diff-closures <drv1> <drv2>` that shows package version changes between two profiles. [#3818](https://github.com/NixOS/nix/pull/3818_
 * Nix Flakes was merged into master.
 
+## Other sources
+
+* https://edolstra.github.io/talks/nixcon-oct-2019.pdf
+* https://nixos.wiki/wiki/Flakes
+* https://www.tweag.io/blog/2020-05-25-flakes/
+* https://www.tweag.io/blog/2020-06-25-eval-cache/
+* https://www.tweag.io/blog/2020-07-31-nixos-flakes/
+
 ## Installation
 
 ### NixOS
