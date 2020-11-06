@@ -52,6 +52,14 @@ To force a value, create a new entry in `about:config`.
 
 If you would like to have a quick method to toggle that setting as an add-on, you can also install [this Firefox add-on](https://addons.mozilla.org/firefox/addon/dark-mode-website-switcher/?src=external-zimbatm).
 
+### Qutebrowser
+
+Add the line `c.colors.webpage.darkmode.enabled = True;` to `config.py`, then restart qutebrowser (e.g. by running `:restart` in the qutebrowser prompt).
+
+### Chromium
+
+Navigate to `chrome://flags/`, then enable the flag `#enable-force-dark`, then relaunch Chromium.
+
 ### References
  
 * https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme
