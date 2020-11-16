@@ -40,6 +40,7 @@ That's all for today.
 
 ## Links to some other opinions
 
-https://raccoon.onyxbits.de/blog/bugreport-free-support/
+* https://raccoon.onyxbits.de/blog/bugreport-free-support/
+* https://lobste.rs/s/yz15mn/about_open_source_community_opennesss
 
 [Direnv]: (Direnv)
