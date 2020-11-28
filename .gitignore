@@ -8,3 +8,7 @@ _site/
 .*.swp
 /.tags
 /.vimwiki_tags
+
+# Obsidian
+/.obsidian
+/.trash

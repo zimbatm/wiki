@@ -76,7 +76,7 @@ I need students and topics!
 1. Send your topic suggestions and timeslot availabilities to
    [nix-friday@zimbatm.com](mailto:nix-friday@zimbatm.com).
 2. Wait for me to contact you back with a time slot.
-3. Be available 20min before the start time for some final preparation.
+3. Be available 15min before the start time for some final preparation.
 
 NOTE: your voice will be re-streamed and recorded. Video is optional.
 
@@ -95,4 +95,3 @@ Bring a problem that you want to solve or topic that you want to learn about.
 
 Mostly OBS. And NixOS obviously :)
 
-TODO: look into using https://restream.io

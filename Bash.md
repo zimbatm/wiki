@@ -9,17 +9,17 @@ The number one issue with Bash is variable escaping. If a variable is used in
 it's unescaped form and contains one or many whitespace characters in it, it
 creates undefined behaviour in the program.
 
-# Biggest issues with Bash
-
-
-
 # Become a bash expert
 
-Bash gets a unecessarily bad reputation because of escaping issues.
+Bash gets a unecessarily bad reputation because of escaping issues. These are moslty avoidable by using Bash arrays, and [ShellCheck](https://www.shellcheck.net/).
 
+Even after coding for a long time, I still have to search for how to do things. The [Pure Bash Bible](https://github.com/dylanaraps/pure-bash-bible) has turned that search way down.
 
-# Cool things with shell scripts
+# Bash projects
 
-## DJB-style chaining
+[[Shab]] - 5 lines pure-bash templating language
+[The way of Bash](https://twitter.com/thewayofbash) - Twitter account I maintain loosely to post about bash things.
 
-## Functions behave like programs
+## See also
+
+[[BashReplacement]]

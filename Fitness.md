@@ -3,7 +3,7 @@ strength training twice per week is enough[1]. This is essential for everyone
 
 Chi Gong and Tai Chi look interesting[2]
 
-## Beenfits of fitness
+## Benefits of fitness
 
 * More energy during the day
 * More positive
