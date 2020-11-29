@@ -17,7 +17,7 @@ What if...
 
 
 The debugger is usually faced with their own code, so they must first be faced
-with they own falliability. Negative emotions impair the debugger's judgement
+with they own fallibility Negative emotions impair the debugger's judgment
 and can also lead to procrastination (procrastination is an emotion management
 issue). This is a long struggle and the best way I found so far is to make
 debugging mechanical enough so that not too much thinking needs to be
