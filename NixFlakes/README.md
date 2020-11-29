@@ -11,6 +11,8 @@ Here are some notes that I took for myself on the subject.
 
 A non-strict history of things that are happening. Latest in front.
 
+* 2020-11-17: Allow nix.conf options to be set in flake.nix. 343239fc8a1993f707a990c2cd54a41f1fa3de99
+* 2020-09-18: Add --redirect flag to redirect dependencies. f9438fb64a223c05ebcfffa9706e1ca811a87d70
 * 2020-08-05: `nix eval <INSTALLABLE> --start-repl-on-eval-errors`. [e5662b](https://github.com/NixOS/nix/commit/e5662ba6525c27248d57d8265e9c6c3a46f95c7e)
 * 2020-07-31: Introduce `nix bundle nixpkgs#jq` which can be used to build installable bundles. [#3880](https://github.com/NixOS/nix/pull/3880)
 * 2020-07-28: Nix version bumped from 2.4 to 3.0 [189e6f5](https://github.com/NixOS/nix/commit/189e6f5e1d949f50ab0b6e5acd25e230d206692d)
@@ -81,11 +83,22 @@ that later).
 It has 3 top-level attributes:
 
 * `description` which is self...describing
+* `nixConfig` allows to set per-project Nix configuration.
 * `input` is an attribute set of all the dependencies of the flake. The schema
   is described below.
 * `output` is a function of one argument that takes an attribute set of all
   the realized inputs, and outputs another attribute set which schema is
   described below.
+
+### nixConfig schema
+
+Eg (from the commit message):
+```
+{
+  nixConfig.bash-prompt-suffix = "ngi# ";
+  nixConfig.substituters = [ "https://cache.ngi0.nixos.org/" ];
+}
+```
 
 ### Input schema
 
@@ -93,7 +106,19 @@ This is not a complete schema but should be enough to get you started:
 
 ```nix
 {
-  inputs.bar = { url = "github:foo/bar/branch"; flake = false; }
+  inputs.bar = {
+    # Source of the input. It supports `github:` `gitlab:` and a number of
+    # other schemes
+    url = "github:foo/bar/branch";
+    # Turn off if the target is not a flake.
+    flake = false;
+    # Used to override inputs of the target if it is a flake.
+    inputs = {
+      # For example, here we declare to use the same version as the parent
+      # nixpkgs. It's probably also possible to override the URL attribute.
+      nixpkgs.follows = "nixpkgs";
+    };
+  };
 }
 ```
 
