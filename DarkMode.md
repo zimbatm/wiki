@@ -12,7 +12,7 @@ Ideally they would respect [`prefers-color-scheme: dark`](https://developer.mozi
 | Site          | Supports | Notes                                       |
 | ---           | ---      | ---                                         |
 | DuckDuckGo    | [x]      | theme selection                             |
-| GitHub        | [ ]      |                                             |
+| GitHub        | [x]      | respects `prefers-color-scheme`             |
 | Google        | [ ]      |                                             |
 | Hacker News   | [ ]      |                                             |
 | Gmail         | [x]      | theme selection                             |
@@ -21,7 +21,7 @@ Ideally they would respect [`prefers-color-scheme: dark`](https://developer.mozi
 | Nomadlist     | [x]      | respects `prefers-color-scheme`             |
 | Notion        | [x]      | manual toggle                               |
 | Reddit        | [x]      | manual toggle                               |
-| StackOverflow | [ ]      |                                             |
+| StackOverflow | [x]      | respects `prefers-color-scheme`             |
 | Twitter       | [x]      | manual toggle                               |
 
 ### Browser extension
