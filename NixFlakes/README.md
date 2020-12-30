@@ -130,7 +130,9 @@ Here is what I found out while reading [`src/nix/flake.cc`](https://github.com/N
 
 Where:
 * `<system>` is something like "x86_64-linux".
+* `<machine>` is something like "mymachine".
 * `<attr>` is an attribute name like "hello".
+* `<job>` is a hydra job name like "release".
 * `<flake>` is a flake name like "nixpkgS".
 * `<store-path>` is a /nix/store.. path
 
@@ -154,16 +156,16 @@ Where:
   legacyPackages = TODO;
   # TODO: Not sure how it's being used
   overlay = final: prev: { };
-  # TODO: Same idea as overlay but a list of them.
-  overlays = [];
+  # TODO: Same idea as overlay but several.
+  overlays."<attr>" = final: prev: { };
   # TODO: Not sure how it's being used
   nixosModule = TODO;
-  # TODO: Same idea as nixosModule but a list of them.
-  nixosModules = [];
+  # TODO: Same idea as nixosModule but several
+  nixosModules."<attr>" = TODO;
   # TODO: Not sure how it's being used
-  nixosConfigurations = TODO;
-  # TODO: Same idea as nixosModule but a list of them.
-  hydraJobs = TODO;
+  nixosConfigurations."<machine>" = TODO;
+  # TODO: Similar idea as for nixosModules but for hydra jobs.
+  hydraJobs."<job>" = TODO;
   # Used by `nix flake init -t <flake>`
   defaultTemplate = {
     path = "<store-path>";
@@ -173,6 +175,8 @@ Where:
   templates."<attr>" = { path = "<store-path>"; description = ""; );
 }
 ```
+See also:
+* https://github.com/NixOS/nix/blob/master/src/nix/flake-check.md
 
 ## Building NixOS configurations with Flakes
 
