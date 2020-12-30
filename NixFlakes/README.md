@@ -154,12 +154,12 @@ Where:
   legacyPackages = TODO;
   # TODO: Not sure how it's being used
   overlay = final: prev: { };
-  # TODO: Same idea as overlay but a list of them.
-  overlays = [];
+  # TODO: Same idea as overlay but an attribute set of them with depth of 1.
+  overlays = {};
   # TODO: Not sure how it's being used
   nixosModule = TODO;
-  # TODO: Same idea as nixosModule but a list of them.
-  nixosModules = [];
+  # TODO: Same idea as nixosModule but an attribute set of them with depth of 1.
+  nixosModules = {};
   # TODO: Not sure how it's being used
   nixosConfigurations = TODO;
   # TODO: Same idea as nixosModule but a list of them.
