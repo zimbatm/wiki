@@ -11,9 +11,9 @@ Here are some notes that I took for myself on the subject.
 
 A non-strict history of things that are happening. Latest in front.
 
-* 2020-11-17: Allow nix.conf options to be set in flake.nix. 343239fc8a1993f707a990c2cd54a41f1fa3de99
-* 2020-09-18: Add --redirect flag to redirect dependencies. f9438fb64a223c05ebcfffa9706e1ca811a87d70
-* 2020-08-05: `nix eval <INSTALLABLE> --start-repl-on-eval-errors`. [e5662b](https://github.com/NixOS/nix/commit/e5662ba6525c27248d57d8265e9c6c3a46f95c7e)
+* 2020-11-17: Allow nix.conf options to be set in flake.nix. [343239f](https://github.com/NixOS/nix/commit/343239fc8a1993f707a990c2cd54a41f1fa3de99)
+* 2020-09-18: Add --redirect flag to redirect dependencies. [f9438fb](https://github.com/NixOS/nix/commit/f9438fb64a223c05ebcfffa9706e1ca811a87d70)
+* 2020-08-05: `nix eval <INSTALLABLE> --start-repl-on-eval-errors`. [e5662ba](https://github.com/NixOS/nix/commit/e5662ba6525c27248d57d8265e9c6c3a46f95c7e)
 * 2020-07-31: Introduce `nix bundle nixpkgs#jq` which can be used to build installable bundles. [#3880](https://github.com/NixOS/nix/pull/3880)
 * 2020-07-28: Nix version bumped from 2.4 to 3.0 [189e6f5](https://github.com/NixOS/nix/commit/189e6f5e1d949f50ab0b6e5acd25e230d206692d)
 * 2020-07-16: `nix diff-closures <drv1> <drv2>` that shows package version changes between two profiles. [#3818](https://github.com/NixOS/nix/pull/3818_
