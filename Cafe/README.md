@@ -1,41 +1,28 @@
 # zimbatm's cafe
 
-Some background chill electro, the sound of people hacking on their own
-projects. This is zimbatm's virtual cafe. No beverages included.
+No beverages included.
 
-Working remotely can be lonely. This is about just sharing presence and
-motivation.
+Working remotely can be lonely sometimes. Come and join us in this virtual
+room. Just be hack on things and have coffees. Or teas. Teas are also welcome.
 
 ## Etiquette
 
-* **No talking!** - people are focused on their work. But feel free to wave
-  and smile when joining :-)
-* Keep your camera on. The point is to see other people working and make this
+* Be nice :-)
+* You can use private spaces to have 1:1 conversations. These are located
+  around the tables.
+* Try not to barge into other people's conversations too much.
+* Turn on your camera. The point is to see other working and make this
   symmetrical.
 * Mute yourself if you have a noisy background environment.
-* Break out into other rooms for 1:1 discussions.
-* Enjoy!
 
-## Cafe
+## Join
 
-URL: https://meet.jit.si/zimbatm-cafe
+  https://gather.town/app/AjUVtTI5LYWM2V59/coffee
 
-<div id="meet"></div>
+## Ideas
 
-<script src='https://meet.jit.si/external_api.js'></script>
-<script>
-const api = new JitsiMeetExternalAPI("meet.jit.si", {
-  roomName: "zimbatm-cafe",
-  width: "100%",
-  height: 700,
-  parentNode: document.querySelector("#meet"),
-  configOverwrite: { startWithAudioMuted: true },
-});
-</script>
+It would be nice to have some background music or a DJ. Maybe tied to a
+Spotify or YouTube Music account? https://askubuntu.com/questions/421014/share-an-audio-playback-stream-through-a-live-audio-video-conversation-like-sk
 
-## Setup
-
-TODO: it would be nice to have some background music or a DJ. Maybe tied to a
-Spotify or YouTube Music account?
-
-https://askubuntu.com/questions/421014/share-an-audio-playback-stream-through-a-live-audio-video-conversation-like-sk
+It would be nice if the cafe was open source so we could hack on it and try
+new ideas.
