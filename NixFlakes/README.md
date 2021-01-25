@@ -1,9 +1,14 @@
 # Nix Flakes edition
 
-> **NOTE**: This is an experimental version of Nix. Things might break.
+> **NOTE**: All of this is completely unstable so please don't adopt this just yet
 
-Nix Flakes is an experimental branch of the Nix project that adds dependency
-management and a central entry-point to Nix projects.
+Nix Flakes is an experimental branch of the Nix project that adds:
+
+* A central `flake.nix` entry-point to Nix projects.
+* Builtin dependency management
+* Is tied to Git
+* Per-commit evaluation caching
+* A new `nix` CLI.
 
 Here are some notes that I took for myself on the subject.
 
