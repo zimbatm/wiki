@@ -64,3 +64,9 @@ register if they want to create an identity.
 ### Setup a bridge between Slack and Matrix
 
 TODO: do some research
+
+## More thoughts
+
+The best thing about email and IRC, is that users can backup chat histories.
+At the moment it looks like Matrix clients are held hostage by the server and
+would lose all their history if they get banned or the server shuts down.
