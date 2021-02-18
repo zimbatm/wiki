@@ -70,3 +70,9 @@ TODO: do some research
 The best thing about email and IRC, is that users can backup chat histories.
 At the moment it looks like Matrix clients are held hostage by the server and
 would lose all their history if they get banned or the server shuts down.
+
+Assuming that every user has their own domain and Matrix server, federation
+needs to work really well. An has to handle spam really well. Right now, the
+server is missing a lot of tooling to debug, accept/kick users and automate
+spam filtering. There are some capabilities that are configurable in the fat
+YAML file.
