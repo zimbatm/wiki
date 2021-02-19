@@ -107,6 +107,54 @@ re-join them.
 
 It would be great to have an admin UI instead of going through all of this.
 
+### Creating a truly public room
+
+I don't understand the full implications of this so please take it with a
+grain of salt.
+
+Creating a public room is more difficult than anticipated so here is all the
+steps I followed.
+
+1. Rooms -> Create new room. Create the room
+2. Select the rooms settings -> Security & Privacy.
+  1. Select "Anyone who knows the room's link, including guests"
+  2. Select "Anyone" on who can ready the history.
+
+Finally, the matrix-synapse server also has to be configured with some extra
+options:
+
+```yaml
+# If set to 'true', removes the need for authentication to access the server's
+# public rooms directory through the client API, meaning that anyone can
+# query the room directory. Defaults to 'false'.
+allow_public_rooms_without_auth: true
+
+# If set to 'true', allows any other homeserver to fetch the server's public
+# rooms directory via federation. Defaults to 'false'.
+allow_public_rooms_over_federation: true
+```
+
+One thing I noticed is that the users table now has a bunch of guests for
+Shields.io. I suspect that one guest is created for each "visit" that
+shields.io does, which is every time the badge is being generated. I assume
+that those will get garbage-collected over time.
+
+### Adding a badge to the repo
+
+See the README.md of https://github.com/numtide/treefmt . It's using the great
+shield.io service. See https://shields.io/category/chat
+
+For the badge to display the number of users, the server needs to accept guest
+users, and the room be fully public (see previous section).
+
+Another surprising fact is that shields.io doesn't resolve the server using
+the matrix delegation so you have to specify the full address using the
+`server_fqdn` attribute. Eg: `server_fqdn=matrix.numtide.com` for the
+`numtide.com` server.
+
+Don't forget to contribute to the service so that they can keep it up and
+running: https://opencollective.com/shields/contribute/
+
 ## More thoughts
 
 The best thing about email and IRC, is that users can backup chat histories.
