@@ -61,6 +61,16 @@ It would be nice if there was a web widget on the website that people can use
 to join the conversation, without having to register or anything. Then only
 register if they want to create an identity.
 
+### Adding GitHub notifications to a room.
+
+https://github.com/maubot/github seems to be working quite well.
+
+1. `/invite @github:maunium.net` in the target room.
+2. `!github login` to give it access to the webhook config. Only needed the
+   first time.
+3. `!github webhook add <owner>/<repo>`
+4. [Sponsor tulir](https://github.com/sponsors/tulir) to keep the bot running.
+
 ### Setup a bridge between Slack and Matrix
 
 TODO: do some research
