@@ -83,6 +83,10 @@ https://github.com/maubot/github seems to be working quite well.
 3. `!github webhook add <owner>/<repo>`
 4. [Sponsor tulir](https://github.com/sponsors/tulir) to keep the bot running.
 
+#### Open issues
+
+The bot is super verbose and posts all comments on all issues. Is it possible to tweak that?
+
 ### Setup a bridge between Slack and Matrix
 
 TODO: do some research
@@ -186,6 +190,19 @@ Sending registration request...
 Success!
 $ 
 ```
+
+### Is it possible to link element to the homeserver?
+
+I don't want to host element-web and have to keep it up to date for now. https://app.element.io/ works but requires to select the homeserver every time. Is it possible to automate that bit?
+
+Skimming through the code of https://github.com/vector-im/element-web/, it doesn't look like it.
+
+### Hosting costs
+
+* 5 EUR / month: [Hetzner Cloud instance](https://www.hetzner.com/cloud)
+* 5 USD / month: sponsor https://github.com/sponsors/tulir for the GitHub bot.
+* TODO: Backup
+* TODO: Track time once it's finished
 
 ## More thoughts
 
