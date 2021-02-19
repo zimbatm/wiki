@@ -1,6 +1,3 @@
----
-tags: project
----
 # Bash Replacement
 
 A collection of ideas for a new language intended at replacing bash.
