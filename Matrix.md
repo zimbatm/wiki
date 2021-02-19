@@ -81,7 +81,7 @@ Somehow I managed to deactivate my own account. Don't ask :-p
 
 ```console
 $ nix-shell -p sqlite --run 'sqlite3 /var/lib/matrix-synapse/homeserver.db'
-sqlite> update users set deactivated=0 where name='@jonas:numtide.com';
+sqlite> update users set deactivated=0 where name='@zimbatm:numtide.com';
 ```
 
 After that, I am getting 'Incorrect username and/or password' when trying to
@@ -99,7 +99,7 @@ $2b$12$lw336TQ8.XJVcFiQSaQfs.xGn668UisSx2u9XOaMsgdOIIUMBVA1W
 Then back in sqlite:
 ```console
 $ nix-shell -p sqlite --run 'sqlite3 /var/lib/matrix-synapse/homeserver.db'
-sqlite> UPDATE users SET password_hash='$2b$12$lw336TQ8.XJVcFiQSaQfs.xGn668UisSx2u9XOaMsgdOIIUMBVA1W' WHERE name='@jonas:numtide.com';
+sqlite> UPDATE users SET password_hash='$2b$12$lw336TQ8.XJVcFiQSaQfs.xGn668UisSx2u9XOaMsgdOIIUMBVA1W' WHERE name='@zimbatm:numtide.com';
 ```
 
 Ok that works now. The user has been kicked from all the rooms and need to
@@ -154,6 +154,26 @@ the matrix delegation so you have to specify the full address using the
 
 Don't forget to contribute to the service so that they can keep it up and
 running: https://opencollective.com/shields/contribute/
+
+### Adding a new users
+
+On NixOS, the administrative commands are not installed system-wide by default. And the configuration is stored in the /nix/store.
+To find those out use:
+```console
+$ systemctl cat matrix-synapse
+```
+
+Then invoke something like the following. Note that matrix.numtide.com is where matrix is being hosted.
+```console
+$ /nix/store/pmcybj5phrcs3b0h2s2jgc1ykaqy2hfc-matrix-synapse-1.26.0/bin/register_new_matrix_user -c /nix/store/lwi1xq6ljznf9anjjchiajpxwqwdwcgf-homeserver.yaml https://matrix.numtide.com/
+New user localpart [root]: zimbatm
+Password: 
+Confirm password: 
+Make admin [no]: yes
+Sending registration request...
+Success!
+$ 
+```
 
 ## More thoughts
 
