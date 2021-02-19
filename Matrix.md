@@ -76,3 +76,8 @@ needs to work really well. An has to handle spam really well. Right now, the
 server is missing a lot of tooling to debug, accept/kick users and automate
 spam filtering. There are some capabilities that are configurable in the fat
 YAML file.
+
+## Useful links
+
+* Documentation sample: https://github.com/matrix-org/synapse/blob/develop/docs/sample_config.yaml
+* Federation tester: https://federationtester.matrix.org/api/report?server_name=numtide.co
