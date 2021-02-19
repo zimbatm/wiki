@@ -49,6 +49,21 @@ The UI is rather confusing. Admins can create "Communities", which is a set of
 rooms. It's not clear how this can be used. It also looks like rooms cannot be
 destroyed, which makes it hard to experiment.
 
+### Communities
+
+Probably the most confusing aspect of Matrix. Communities have the notation `+<name>:<server>`. Eg: `+oss:numtide.com`.
+
+A community is a landing page, and a list of rooms. Rooms can belong to multiple communities.
+
+#### Unknowns
+
+The user creating a community gains admin. I didn't find a way to give admin to multiple poeple yet.
+
+Communities don't seem to be searchable?
+
+
+
+
 ## Things I want to do
 
 ### Deploy a Matrix server for numtide.com
