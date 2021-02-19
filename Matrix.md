@@ -75,6 +75,38 @@ https://github.com/maubot/github seems to be working quite well.
 
 TODO: do some research
 
+### Re-activate a user that was deactivated by mistake
+
+Somehow I managed to deactivate my own account. Don't ask :-p
+
+```console
+$ nix-shell -p sqlite --run 'sqlite3 /var/lib/matrix-synapse/homeserver.db'
+sqlite> update users set deactivated=0 where name='@jonas:numtide.com';
+```
+
+After that, I am getting 'Incorrect username and/or password' when trying to
+login. To generate a new hash, find the path to the matrix-synapse package.
+Eg: `systemctl cat matrix-synapse`.
+
+```console
+$ /nix/store/pmcybj5phrcs3b0h2s2jgc1ykaqy2hfc-matrix-synapse-1.26.0/bin/hash_password
+Password:
+Confirm password:
+$2b$12$lw336TQ8.XJVcFiQSaQfs.xGn668UisSx2u9XOaMsgdOIIUMBVA1W
+```
+^ not my real password, don't worry.
+
+Then back in sqlite:
+```console
+$ nix-shell -p sqlite --run 'sqlite3 /var/lib/matrix-synapse/homeserver.db'
+sqlite> UPDATE users SET password_hash='$2b$12$lw336TQ8.XJVcFiQSaQfs.xGn668UisSx2u9XOaMsgdOIIUMBVA1W' WHERE name='@jonas:numtide.com';
+```
+
+Ok that works now. The user has been kicked from all the rooms and need to
+re-join them.
+
+It would be great to have an admin UI instead of going through all of this.
+
 ## More thoughts
 
 The best thing about email and IRC, is that users can backup chat histories.
