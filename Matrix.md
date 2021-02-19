@@ -55,14 +55,11 @@ Probably the most confusing aspect of Matrix. Communities have the notation `+<n
 
 A community is a landing page, and a list of rooms. Rooms can belong to multiple communities.
 
-#### Unknowns
+#### Limitations
 
-The user creating a community gains admin. I didn't find a way to give admin to multiple poeple yet.
+The user creating a community gains admin. I didn't find a way to give admin to multiple people yet. Related issue: https://github.com/vector-im/element-web/issues/5240
 
 Communities don't seem to be searchable?
-
-
-
 
 ## Things I want to do
 
