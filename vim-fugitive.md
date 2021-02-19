@@ -1,3 +1,8 @@
+---
+tags:
+  - vim
+---
+
 # vim-fugitive
 :+1:
 :vim:
