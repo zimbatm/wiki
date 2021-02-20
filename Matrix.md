@@ -201,7 +201,7 @@ Skimming through the code of https://github.com/vector-im/element-web/, it doesn
 
 * 5 EUR / month: [Hetzner Cloud instance](https://www.hetzner.com/cloud)
 * 5 USD / month: sponsor https://github.com/sponsors/tulir for the GitHub bot.
-* TODO: Backup
+* 5 USD / month: Wasabi backup
 * TODO: Track time once it's finished
 
 ## More thoughts
