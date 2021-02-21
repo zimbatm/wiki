@@ -2,10 +2,7 @@
 with pkgs;
 mkShell {
   buildInputs = [
-    bundix
-    github-pages
     mdsh
-    niv
     nixpkgs-fmt
   ];
 
