@@ -6,15 +6,15 @@ federation that allows it to be decentralized.
 Another nice property is that Matrix actively supports bridging to other chat
 platforms like Slack, Signal, WhatsApp, ...
 
-My hope for NumTide is that we can replace Slack with Matrix as NumTide is an
-OSS company and it would work best in our ethos. It would also make it easier
-or people to join conversations with us, assuming they have a Matrix account.
+My hope for [NumTide](NumTide.md) is that we can replace Slack with Matrix as
+NumTide is an OSS company and it would work best in our ethos. It would also
+make it easier or people to join conversations with us, assuming they have a
+Matrix account.
 
-## Overview
+## Critique
 
-Ideally it would be possible to get your own instance in one-click. And have
-maintenance be close to zero for small instances. I don't think we are quite
-there yet.
+I really want Matrix to succeed. This criticism is meant as a form of
+encouragement and inspiration to improve things.
 
 ### Server administration
 
@@ -33,6 +33,11 @@ indefinitely.
 Things like running bridges, bots, ... are all custom extra deployments.
 Bridges tend to also have state which requires extra backup and restore
 configuration.
+
+Since the server is federated, I am quite certain that spam is going to become
+a problem. Yet the server doesn't provide a solution out of the box. To be
+faire there is a spam filter in the big YAML that can be configured but it's
+yet another hoop to jump.
 
 Servers can have admins that have extra powers like creating new rooms and
 communities (groups of rooms). Kick people out. It looks like users have to
@@ -55,41 +60,28 @@ Probably the most confusing aspect of Matrix. Communities have the notation `+<n
 
 A community is a landing page, and a list of rooms. Rooms can belong to multiple communities.
 
+NOTE: apparently there is a communities v2 under work that might make things
+better.
+
 #### Limitations
 
 The user creating a community gains admin. I didn't find a way to give admin to multiple people yet. Related issue: https://github.com/vector-im/element-web/issues/5240
 
 Communities don't seem to be searchable?
 
-## Things I want to do
+## Howtos
 
-### Deploy a Matrix server for numtide.com
+Here are all the questions I had that I was able to answer myself.
 
-It looks like it's running. I still have to configure backup and restore.
+### Backup and restore
 
-### Public rooms for OSS projects
-
-It would be nice if there was a web widget on the website that people can use
-to join the conversation, without having to register or anything. Then only
-register if they want to create an identity.
-
-### Adding GitHub notifications to a room.
-
-https://github.com/maubot/github seems to be working quite well.
-
-1. `/invite @github:maunium.net` in the target room.
-2. `!github login` to give it access to the webhook config. Only needed the
-   first time.
-3. `!github webhook add <owner>/<repo>`
-4. [Sponsor tulir](https://github.com/sponsors/tulir) to keep the bot running.
+I configured [restic](https://restic.net/) to create a hourly snapshot of the
+state folder and copy it to Wasabi, a S3-compatible service.
 
 #### Open issues
 
-The bot is super verbose and posts all comments on all issues. Is it possible to tweak that?
-
-### Setup a bridge between Slack and Matrix
-
-TODO: do some research
+I don't know if the sqlite file changes are atomic or if there is a chance
+they might get corrupted on restore.
 
 ### Re-activate a user that was deactivated by mistake
 
@@ -122,6 +114,20 @@ Ok that works now. The user has been kicked from all the rooms and need to
 re-join them.
 
 It would be great to have an admin UI instead of going through all of this.
+
+### Adding GitHub notifications to a room.
+
+https://github.com/maubot/github seems to be working quite well.
+
+1. `/invite @github:maunium.net` in the target room.
+2. `!github login` to give it access to the webhook config. Only needed the
+   first time.
+3. `!github webhook add <owner>/<repo>`
+4. [Sponsor tulir](https://github.com/sponsors/tulir) to keep the bot running.
+
+#### Open issues
+
+The bot is super verbose and posts all comments on all issues. Is it possible to tweak that?
 
 ### Creating a truly public room
 
@@ -191,30 +197,52 @@ Success!
 $ 
 ```
 
+### How much does it cost?
+
+So far here is what it costs for me:
+
+* 5 EUR / month: [Hetzner Cloud instance](https://www.hetzner.com/cloud)
+* 5 USD / month: sponsor https://github.com/sponsors/tulir for the GitHub bot.
+* 5 USD / month: backup
+* TODO: Track time once it's finished
+
+## Open questions
+
+### How to setup a bridge between Slack and Matrix?
+
+TODO: do some research. I know it's possible, but not in what form.
+
+
+### Can a user backup and restore all their chats?
+
+Email and IRC have this nice property that the user can relatively keep a local copy of all their interactions with other users. Is it possible to do that with Matrix?
+
+### Can a user move between matrix servers?
+
+What if a server disappears or kicks out a user. Can that user move their identity to another server? Having the identity detached from a domain seems quite vital to me.
+
 ### Is it possible to link element to the homeserver?
 
 I don't want to host element-web and have to keep it up to date for now. https://app.element.io/ works but requires to select the homeserver every time. Is it possible to automate that bit?
 
 Skimming through the code of https://github.com/vector-im/element-web/, it doesn't look like it.
 
-### Hosting costs
+## Critique
 
-* 5 EUR / month: [Hetzner Cloud instance](https://www.hetzner.com/cloud)
-* 5 USD / month: sponsor https://github.com/sponsors/tulir for the GitHub bot.
-* 5 USD / month: Wasabi backup
-* TODO: Track time once it's finished
+I really want Matrix to succeed so if I am being critical, please take it as a
+form of encouragement and inspiration to improve things.
 
-## More thoughts
+### Self-hosting
 
-The best thing about email and IRC, is that users can backup chat histories.
-At the moment it looks like Matrix clients are held hostage by the server and
-would lose all their history if they get banned or the server shuts down.
+Ideally it would be possible to get your own instance in one-click. And have
+maintenance be close to zero for small instances. I don't think we are quite
+there yet. One pet-peeve of mine is that none of the guides document how to
+backup and restore the server.
 
-Assuming that every user has their own domain and Matrix server, federation
-needs to work really well. An has to handle spam really well. Right now, the
-server is missing a lot of tooling to debug, accept/kick users and automate
-spam filtering. There are some capabilities that are configurable in the fat
-YAML file.
+### No admin UI
+
+Most of the configuration is done in a big YAML and there is no
+administrative UI to manage users.
 
 ## Useful links
 
