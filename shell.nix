@@ -1,9 +1,10 @@
-{ pkgs ? import ./nix { } }:
-with pkgs;
-mkShell {
+{ system ? builtins.currentSystem
+, pkgs ? import ./nix { inherit system; }
+}:
+pkgs.mkShell {
   buildInputs = [
-    mdsh
-    nixpkgs-fmt
+    pkgs.mdsh
+    pkgs.nixpkgs-fmt
   ];
 
   shellHook = ''

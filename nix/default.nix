@@ -1,14 +1,10 @@
-{ nixpkgs ? (import ./sources.nix).nixpkgs
-, system ? builtins.currentSystem
-}:
+{ system ? builtins.currentSystem }:
 let
-  pkgs = import nixpkgs {
+  sources = import ./sources.nix;
+  pkgs = import sources.nixpkgs {
     inherit system;
     config = { };
-    overlays = [ overlay ];
-  };
-  overlay = self: pkgs: {
-    github-pages = pkgs.callPackage ./pkgs/github-pages { };
+    overlays = [ ];
   };
 in
 pkgs

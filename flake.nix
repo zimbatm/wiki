@@ -1,19 +1,10 @@
 {
   description = "Personal wiki & journal";
 
-  inputs.utils.url = "github:numtide/flake-utils";
+  inputs.flake-utils.url = "github:numtide/flake-utils";
 
-  outputs = { self, nixpkgs, utils }:
-    utils.lib.eachDefaultSystem
-      (system:
-        let
-          pkgs = import ./nix {
-            inherit nixpkgs;
-            system = "x86_64-linux";
-          };
-        in
-        {
-          devShell = import ./shell.nix { inherit pkgs; };
-        }
-      );
+  outputs = { self, flake-utils }:
+    flake-utils.lib.eachDefaultSystem (system: {
+      devShell = import ./shell.nix { inherit system; };
+    });
 }
