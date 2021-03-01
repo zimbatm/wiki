@@ -83,3 +83,7 @@ the logs.
 
 The pod might fail because of an ImagePullBackOff, which only appears in the
 events, not in the pod logs.
+
+# Related reads
+
+* https://blog.dave.tf/post/new-kubernetes/
