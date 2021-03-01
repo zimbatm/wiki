@@ -67,6 +67,13 @@ spec:
 ```
 [source](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 
+## Composition vs Inheritance
+
+Fundamentally, I like to compose things together.
+
+Whenever a resource needs special metadata annotation to work, it's
+inherently inheritance.
+
 ## Complexity explosion
 
 A platform truly fails when it is not able to curtail complexity.
