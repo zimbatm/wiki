@@ -1,29 +1,43 @@
+---
+tags: [software-engineering]
+---
 # Bisect Debugging
 
-Debugging problems are rarely thrown our way at times that are conventient to
-us.
+I was using `git-bisect` a lot and asked myself if this approach was generally applicable. It turns out that it works surprisingly well in a lot of cases. And I keep getting reminded that it works through practice. That's why I'm writing this article.
 
-The product launch is tomorrow and some obscure error is keeping the developer
-awake many hours past curfew.
+But first, here are two triggers that show that I don't know what I'm doing:
 
-TODO: insert more debugging scenarios in here
+* Randomly upgrade packages in the hope that it will fix a bug.
+* Create bigger instance sizes in the hope that it will fix performance issues.
 
-What if there was an easy way to approach debugging?
+When I see myself doing these things, it's time to bust out bisect debugging.
 
-## Bisect debugging
+## What is bisect debugging?
 
-What if... 
+The idea is simple; apply the [Binary search alorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm) to the debugging process. If you can map the search space into a flat line, then you are guaranteed to find a solution in `O(log n)` steps.
 
+The first step is to map the search space. Find two bounds to the problem. On one side it's working, and on the other it's failing.
 
+Cut the space in half, and test if the error occurs there. If it is, move the cursor to the half that's working, otherwise, move it to the half that's broken.
 
-The debugger is usually faced with their own code, so they must first be faced
-with they own fallibility Negative emotions impair the debugger's judgment
-and can also lead to procrastination (procrastination is an emotion management
-issue). This is a long struggle and the best way I found so far is to make
-debugging mechanical enough so that not too much thinking needs to be
-involved.
+Repeat until you pin-point the problem.
 
-The secret is to apply this simple formula: apply bisecting to all debugging
-problem. The nice thing about binary search is that it's guaranteed to find
-the problem in O(log N).
+That's the overall process.
 
+Of course, reality is messy and doesn't always cleanly map to linear search space. And finding the exact half is not always measurable. But following that process has been immensely useful to me, over and over again.
+
+## Why is it so good?
+
+Mechanical; debugging is an uncertain process. Uncertainty is a big driver for procrastination. Especially as a young engineer, or when under time pressure, the uncertainty can become quite unbearable. Because bisect debugging is mechanical, I find that it helps reduce that uncertainty and focus on finding the root cause of the problem instead. It also helps to communicate to management or other teams what we tried and what the next steps are.
+
+Knowledge; the process of mapping the search space in itself is useful. It helps expose the areas that I don't understand. In order to build the mental picture of the search space, I have to know what the space is like. Over time, this makes me a better engineer.
+
+## Examples
+
+TODO: Add some worked examples.
+
+A good one is how to debug a networking connection issue.
+
+## Bonus: weighted bisect debugging
+
+With experience, it's possible to speed up the search process even further. If you know where the problem is more likely to be, split to that location instead of the half. Of course, even with experience, you might still be wrong.
