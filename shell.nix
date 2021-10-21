@@ -1,13 +1,5 @@
 { system ? builtins.currentSystem
+, inputs ? import ./nix/sources.nix
 , pkgs ? import ./nix { inherit system; }
+, emanote ? import inputs.emanote
 }:
-pkgs.mkShell {
-  buildInputs = [
-    pkgs.mdsh
-    pkgs.nixpkgs-fmt
-  ];
-
-  shellHook = ''
-    export NIX_PATH=nixpkgs=${toString ./nix}
-  '';
-}

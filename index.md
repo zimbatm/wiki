@@ -1,9 +1,11 @@
+# $ zimbatm
+
 ![alpacasay](img/alpacasay.png)
 
 This website is my personal scratchpad. See [about](about.md) for more info on
 the website.
 
-If you enjoy my work, you might also be interested in hiring [my Nix
+If you enjoy my work, you might also be interested in hiring [my 
 consulting services](https://numtide.com).
 
 ## Posts
@@ -43,9 +45,3 @@ consulting services](https://numtide.com).
 * [socketmaster](https://github.com/zimbatm/socketmaster) - zero downtime services restarts 
 * [terraform-nixos](https://github.com/tweag/terraform-nixos) - Deploy NixOS with Terraform
 * [more...](https://github.com/zimbatm?utf8=%E2%9C%93&tab=repositories&type=source)
-
-## Journalling
-
-{% for post in site.posts %}
-* [{{ post.date | date: "%Y-%m-%d" }} - {{ post.title }}]({{ post.url | prepend: site.baseurl }})
-{% endfor %}
