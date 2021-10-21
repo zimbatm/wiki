@@ -115,7 +115,7 @@ Necessary to keep the brain in shape.
 
 ### ALWAYS get a good night of sleep!!!
 
-This is so important. Sleep is an interesting subject.
+This is so important. [Sleep](Sleep.md) is an interesting subject.
 
 One common misconception is that if you miss 1 hour of sleep one day, it's
 enough to sleep another hour more the next day. This is completely false! It

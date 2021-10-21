@@ -16,8 +16,8 @@ to the world?
 ## This website
 
 This website is an experiment that combines [vimwiki](vimwiki.md) with github
-pages to maintain a personal [diary](diary.md) and wiki. For more info, see the
-[README](README.md) page.
+pages and [emanote](https://github.com/srid/emanote) to maintain a personal
+wiki. For more info on the setup, see the [README](README.md) page.
 
 I used to worry about permanent URLs but not anymore. Make sure to scape the
 hell out of the website if you want to keep some information!
@@ -28,7 +28,8 @@ free Internet!
 ## Contact me
 
 If you want to reach me, [@zimbatm on Twitter](https://twitter.com/zimbatm),
-[GitHub](https://github.com/zimbatm/) and [Mastodon](https://mastodon.social/@zimbatm), send an email to, you guessed
+[GitHub](https://github.com/zimbatm/) and
+[Mastodon](https://mastodon.social/@zimbatm), send an email to, you guessed
 it, [zimbatm@zimbatm.com](mailto:zimbatm@zimbatm.com) .
 
 My GPG key fingerprint is 2603 53B9 93F8 CE16 752E  F48C 71BA F6D4 0C1D 63D7

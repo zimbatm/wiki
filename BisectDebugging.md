@@ -32,6 +32,16 @@ Mechanical; debugging is an uncertain process. Uncertainty is a big driver for p
 
 Knowledge; the process of mapping the search space in itself is useful. It helps expose the areas that I don't understand. In order to build the mental picture of the search space, I have to know what the space is like. Over time, this makes me a better engineer.
 
+## How to map
+
+.
+
+## Times it doesn't work
+
+Mapping is too hard.
+
+The search space is not linearizable.
+
 ## Examples
 
 TODO: Add some worked examples.
