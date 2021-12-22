@@ -5,7 +5,7 @@ https://nixos.org
 
 ## Topics
 
-* [Nix Flakes](NixFlakes) is an experiment dependency manager for nix
+* [Nix Flakes](NixFlakes.md) is an experiment dependency manager for nix
 * [nixpkgs-fmt](https://nix-community.github.io/nixpkgs-fmt) is a nix code
   formatter.
 * [Benchmarking nixpkgs builds](benchmark-nixpkgs)

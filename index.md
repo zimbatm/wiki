@@ -14,7 +14,6 @@ consulting services](https://numtide.com).
 
 ## Notes & research
 
-* [NixFlakes](NixFlakes) - taking notes on the Nix Flakes branch
 * [Matrix](Matrix.md)
 * [DarkMode](DarkMode.md)
 
